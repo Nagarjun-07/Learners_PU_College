@@ -39,8 +39,7 @@ const Navbar = () => {
                             height={48}
                             className="h-12 w-auto object-contain"
                         />
-                        <div className="font-display font-bold text-2xl text-sky-700 tracking-tight">LGS</div>
-                        <div className="hidden sm:block ml-2 text-sm text-gray-500 border-l pl-2 border-gray-300">
+                        <div className="font-display font-bold text-xl sm:text-2xl text-sky-700 tracking-tight">
                             Learners PU College
                         </div>
                     </div>
