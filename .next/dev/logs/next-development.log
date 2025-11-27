@@ -1,0 +1,329 @@
+[00:00:02.522] Server  LOG      ✓ Ready in 1842ms
+[00:00:07.396] Server  LOG      ○ Compiling / ...
+[00:00:16.564] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:17.117] Browser WARN    Image with src "/resources/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:17.508] Browser WARN    Image with src "/resources/faculty-team.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:17.508] Browser WARN    Image with src "/resources/sat-classroom.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:17.727] Browser WARN    Image with src "/resources/neet-prep.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:17.727] Browser WARN    Image with src "/resources/iit-jee-study.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:32.310] Server  LOG      ✓ Compiled in 371ms
+[00:07:16.418] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:16.996] Browser WARN    Image with src "/resources/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:07:16.997] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="inter_5901..." suppressHydrationWarning={true}>
+                          <body
++                           className="font-body bg-white"
+-                           className="font-body bg-white antigravity-scroll-lock"
+                          >
+                  ...
+
+[00:07:16.997] Browser WARN    Image with src "/resources/neet-prep.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:16.997] Browser WARN    Image with src "/resources/iit-jee-study.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:16.997] Browser WARN    Image with src "/resources/sat-classroom.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:16.997] Browser WARN    Image with src "/resources/faculty-team.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:09:07.589] Browser WARN    Image with src "/resources/student-achievers.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:01.295] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:01.670] Browser WARN    Image with src "/resources/neet-prep.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:01.670] Browser WARN    Image with src "/resources/iit-jee-study.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:01.670] Browser WARN    Image with src "/resources/sat-classroom.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:01.670] Browser WARN    Image with src "/resources/faculty-team.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:01.670] Browser WARN    Image with src "/resources/student-achievers.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:12:05.381] Server  LOG      ✓ Compiled in 1534ms
+[00:12:21.169] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:22.129] Browser WARN    Image with src "/resources/neet-prep.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:12:22.129] Browser WARN    Image with src "/resources/iit-jee-study.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:12:22.129] Browser WARN    Image with src "/resources/sat-classroom.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:12:22.129] Browser WARN    Image with src "/resources/faculty-team.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:25.095] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:25.481] Browser WARN    Image with src "/resources/neet-prep.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:25.481] Browser WARN    Image with src "/resources/iit-jee-study.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:25.481] Browser WARN    Image with src "/resources/sat-classroom.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:25.481] Browser WARN    Image with src "/resources/faculty-team.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:14:57.940] Server  LOG      ✓ Compiled in 761ms
+[00:14:58.513] Browser ERROR   uncaughtError: ReferenceError: Counter is not defined
+[00:14:58.553] Browser ERROR   uncaughtError: ReferenceError: Counter is not defined
+[00:14:59.513] Browser ERROR   uncaughtError: ReferenceError: Counter is not defined
+[00:15:20.741] Server  LOG      ✓ Compiled in 102ms
+[00:15:20.855] Browser ERROR   ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx:101:33
+Parsing ecmascript source code failed
+   99 |                             </Link>
+  100 |                             <Link
+> 101 |                                 <div className="text-3xl font-bold text-sky-700">
+      |                                 ^
+  102 |                                 <Counter end={95} suffix="%" />
+  103 |                         </div>
+  104 |                         <div className="text-sm text-gray-600">{t('stat-success')}</div>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/app/page.tsx
+[00:15:20.855] Browser ERROR   ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx:101:33
+Parsing ecmascript source code failed
+   99 |                             </Link>
+  100 |                             <Link
+> 101 |                                 <div className="text-3xl font-bold text-sky-700">
+      |                                 ^
+  102 |                                 <Counter end={95} suffix="%" />
+  103 |                         </div>
+  104 |                         <div className="text-sm text-gray-600">{t('stat-success')}</div>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/app/page.tsx
+[00:15:21.508] Browser ERROR   ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx:101:33
+Parsing ecmascript source code failed
+   99 |                             </Link>
+  100 |                             <Link
+> 101 |                                 <div className="text-3xl font-bold text-sky-700">
+      |                                 ^
+  102 |                                 <Counter end={95} suffix="%" />
+  103 |                         </div>
+  104 |                         <div className="text-sm text-gray-600">{t('stat-success')}</div>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/app/page.tsx
+[00:15:47.675] Browser ERROR   ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx:136:9
+Parsing ecmascript source code failed
+  134 |             </div>
+  135 |         </div >
+> 136 |         </section >
+      |         ^
+  137 |     );
+  138 | };
+  139 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/app/page.tsx
+[00:15:47.675] Browser ERROR   ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx:136:10
+Parsing ecmascript source code failed
+  134 |             </div>
+  135 |         </div >
+> 136 |         </section >
+      |          ^^^^^^^^^^
+  137 |     );
+  138 | };
+  139 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/app/page.tsx
+[00:15:47.675] Browser ERROR   ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx:136:9
+Parsing ecmascript source code failed
+  134 |             </div>
+  135 |         </div >
+> 136 |         </section >
+      |         ^
+  137 |     );
+  138 | };
+  139 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/app/page.tsx
+[00:15:47.675] Browser ERROR   ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx:136:10
+Parsing ecmascript source code failed
+  134 |             </div>
+  135 |         </div >
+> 136 |         </section >
+      |          ^^^^^^^^^^
+  137 |     );
+  138 | };
+  139 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/app/page.tsx
+[00:15:48.520] Browser ERROR   ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx:136:9
+Parsing ecmascript source code failed
+  134 |             </div>
+  135 |         </div >
+> 136 |         </section >
+      |         ^
+  137 |     );
+  138 | };
+  139 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/app/page.tsx
+[00:15:48.520] Browser ERROR   ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx:136:10
+Parsing ecmascript source code failed
+  134 |             </div>
+  135 |         </div >
+> 136 |         </section >
+      |          ^^^^^^^^^^
+  137 |     );
+  138 | };
+  139 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/components/Hero.tsx
+    ./OneDrive/Desktop/lgs/Learners_PU_College/src/app/page.tsx
+[00:16:08.958] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:16:08.971] Server  LOG      ✓ Compiled in 846ms
+[00:16:08.972] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:16:08.975] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:16:16.005] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:16.536] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:16.811] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:17.657] Browser WARN    Image with src "/resources/neet-prep.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:17.657] Browser WARN    Image with src "/resources/iit-jee-study.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:17.657] Browser WARN    Image with src "/resources/sat-classroom.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:17.657] Browser WARN    Image with src "/resources/faculty-team.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:18.071] Browser WARN    Image with src "/resources/neet-prep.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:18.071] Browser WARN    Image with src "/resources/iit-jee-study.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:18.071] Browser WARN    Image with src "/resources/sat-classroom.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:18.071] Browser WARN    Image with src "/resources/faculty-team.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:37.372] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:38.590] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="inter_5901..." suppressHydrationWarning={true}>
+                          <body
++                           className="font-body bg-white"
+-                           className="font-body bg-white antigravity-scroll-lock"
+                          >
+                  ...
+
+[00:16:38.590] Browser WARN    Image with src "/resources/neet-prep.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:38.590] Browser WARN    Image with src "/resources/iit-jee-study.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:38.590] Browser WARN    Image with src "/resources/sat-classroom.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:38.590] Browser WARN    Image with src "/resources/faculty-team.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:16.124] Browser WARN    Image with src "/resources/student-achievers.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:22.348] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:23.289] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="inter_5901..." suppressHydrationWarning={true}>
+                          <body
++                           className="font-body bg-white"
+-                           className="font-body bg-white antigravity-scroll-lock"
+                          >
+                  ...
+
+[00:17:23.289] Browser WARN    Image with src "/resources/neet-prep.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:23.289] Browser WARN    Image with src "/resources/iit-jee-study.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:23.289] Browser WARN    Image with src "/resources/sat-classroom.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:23.398] Browser WARN    Image with src "/resources/faculty-team.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:40.434] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:40.788] Browser WARN    Image with src "/resources/neet-prep.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:40.788] Browser WARN    Image with src "/resources/iit-jee-study.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:40.788] Browser WARN    Image with src "/resources/sat-classroom.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:40.788] Browser WARN    Image with src "/resources/faculty-team.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:49.304] Browser WARN    Image with src "/resources/student-achievers.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:20:10.973] Server  LOG      ○ Compiling /about ...
+[00:20:15.460] Server  LOG      ○ Compiling /courses ...
