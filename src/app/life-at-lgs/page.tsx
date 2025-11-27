@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import anime from 'animejs';
 
-// Types
 type AchievementCategory = 'all' | 'academic' | 'sports' | 'cultural' | 'leadership';
 type GalleryCategory = 'all' | 'events' | 'sports' | 'academics' | 'cultural';
 
@@ -749,3 +748,4 @@ const LifeAtLGS = () => {
 };
 
 export default LifeAtLGS;
+
