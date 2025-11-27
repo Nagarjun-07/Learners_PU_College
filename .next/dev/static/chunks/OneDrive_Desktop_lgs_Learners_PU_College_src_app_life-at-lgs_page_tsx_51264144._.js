@@ -20,12 +20,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 const LifeAtLGS = ()=>{
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(111);
-    if ($[0] !== "3117b2a1340ab060589d86917ed940427a0306e0d14c9ee45015b5b8e53d40b6") {
-        for(let $i = 0; $i < 111; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(99);
+    if ($[0] !== "5c75bb9d88614418de97aba4d80af47902457edefa4cd1d66d194edbc0fec44b") {
+        for(let $i = 0; $i < 99; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "3117b2a1340ab060589d86917ed940427a0306e0d14c9ee45015b5b8e53d40b6";
+        $[0] = "5c75bb9d88614418de97aba4d80af47902457edefa4cd1d66d194edbc0fec44b";
     }
     const [activeAchievementFilter, setActiveAchievementFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("all");
     const [activeGalleryFilter, setActiveGalleryFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("all");
@@ -1398,7 +1398,7 @@ const LifeAtLGS = ()=>{
                 "leadership"
             ].map((filter)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: ()=>setActiveAchievementFilter(filter),
-                    className: `px-6 py-3 rounded-full border-2 font-semibold transition-all duration-300 ${activeAchievementFilter === filter ? "bg-orange-500 border-orange-500 text-white" : "border-orange-500 text-orange-500 hover:bg-orange-50"}`,
+                    className: `px-6 py-3 rounded-full border-2 font-semibold transition-all duration-300 ${activeAchievementFilter === filter ? "bg-sky-600 border-sky-600 text-white" : "border-sky-600 text-sky-600 hover:bg-sky-50"}`,
                     children: [
                         filter.charAt(0).toUpperCase() + filter.slice(1),
                         " ",
@@ -2102,7 +2102,7 @@ const LifeAtLGS = ()=>{
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     className: "font-display text-4xl font-bold text-blue-900 mb-4",
-                    children: "Events & Activities"
+                    children: "Tours & Excursions"
                 }, void 0, false, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
                     lineNumber: 579,
@@ -2110,11 +2110,11 @@ const LifeAtLGS = ()=>{
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-xl text-gray-600 max-w-3xl mx-auto",
-                    children: "A vibrant calendar of events, cultural programs, and extracurricular activities throughout the year."
+                    children: "Educational tours and excursions that provide real-world learning experiences and exposure."
                 }, void 0, false, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
                     lineNumber: 579,
-                    columnNumber: 141
+                    columnNumber: 140
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
@@ -2127,586 +2127,10 @@ const LifeAtLGS = ()=>{
         t59 = $[67];
     }
     let t60;
-    if ($[68] === Symbol.for("react.memo_cache_sentinel")) {
-        t60 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-            className: "font-display text-2xl font-semibold text-blue-900",
-            children: "December 2023"
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 586,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[68] = t60;
-    } else {
-        t60 = $[68];
-    }
     let t61;
-    if ($[69] === Symbol.for("react.memo_cache_sentinel")) {
-        t61 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            className: "p-2 hover:bg-gray-200 rounded-lg transition-colors",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                className: "w-5 h-5",
-                fill: "none",
-                stroke: "currentColor",
-                viewBox: "0 0 24 24",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    strokeLinecap: "round",
-                    strokeLinejoin: "round",
-                    strokeWidth: "2",
-                    d: "M15 19l-7-7 7-7"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 593,
-                    columnNumber: 161
-                }, ("TURBOPACK compile-time value", void 0))
-            }, void 0, false, {
-                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 593,
-                columnNumber: 82
-            }, ("TURBOPACK compile-time value", void 0))
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 593,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[69] = t61;
-    } else {
-        t61 = $[69];
-    }
     let t62;
-    if ($[70] === Symbol.for("react.memo_cache_sentinel")) {
-        t62 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex justify-between items-center mb-6",
-            children: [
-                t60,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex space-x-2",
-                    children: [
-                        t61,
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "p-2 hover:bg-gray-200 rounded-lg transition-colors",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                className: "w-5 h-5",
-                                fill: "none",
-                                stroke: "currentColor",
-                                viewBox: "0 0 24 24",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                    strokeLinecap: "round",
-                                    strokeLinejoin: "round",
-                                    strokeWidth: "2",
-                                    d: "M9 5l7 7-7 7"
-                                }, void 0, false, {
-                                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                    lineNumber: 600,
-                                    columnNumber: 259
-                                }, ("TURBOPACK compile-time value", void 0))
-                            }, void 0, false, {
-                                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                lineNumber: 600,
-                                columnNumber: 180
-                            }, ("TURBOPACK compile-time value", void 0))
-                        }, void 0, false, {
-                            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                            lineNumber: 600,
-                            columnNumber: 109
-                        }, ("TURBOPACK compile-time value", void 0))
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 600,
-                    columnNumber: 72
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 600,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[70] = t62;
-    } else {
-        t62 = $[70];
-    }
-    let t63;
-    if ($[71] === Symbol.for("react.memo_cache_sentinel")) {
-        t63 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "grid grid-cols-7 gap-2 mb-4",
-            children: [
-                "Sun",
-                "Mon",
-                "Tue",
-                "Wed",
-                "Thu",
-                "Fri",
-                "Sat"
-            ].map(_temp3)
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 607,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[71] = t63;
-    } else {
-        t63 = $[71];
-    }
-    let t64;
-    if ($[72] === Symbol.for("react.memo_cache_sentinel")) {
-        t64 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "grid grid-cols-7 gap-2",
-            children: Array.from({
-                length: 31
-            }, _temp4).map(_temp5)
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 614,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[72] = t64;
-    } else {
-        t64 = $[72];
-    }
-    let t65;
-    if ($[73] === Symbol.for("react.memo_cache_sentinel")) {
-        t65 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-4 h-4 bg-orange-100 rounded mr-2"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 623,
-                    columnNumber: 46
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-gray-600",
-                    children: "Events"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 623,
-                    columnNumber: 100
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 623,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[73] = t65;
-    } else {
-        t65 = $[73];
-    }
-    let t66;
-    if ($[74] === Symbol.for("react.memo_cache_sentinel")) {
-        t66 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-4 h-4 bg-blue-100 rounded mr-2"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 630,
-                    columnNumber: 46
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-gray-600",
-                    children: "Exams"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 630,
-                    columnNumber: 98
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 630,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[74] = t66;
-    } else {
-        t66 = $[74];
-    }
-    let t67;
-    if ($[75] === Symbol.for("react.memo_cache_sentinel")) {
-        t67 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "bg-gray-50 rounded-2xl p-8 mb-12",
-            children: [
-                t62,
-                t63,
-                t64,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mt-6 flex items-center justify-center space-x-6 text-sm",
-                    children: [
-                        t65,
-                        t66,
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-4 h-4 bg-green-100 rounded mr-2"
-                                }, void 0, false, {
-                                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                    lineNumber: 637,
-                                    columnNumber: 194
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-gray-600",
-                                    children: "Holidays"
-                                }, void 0, false, {
-                                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                    lineNumber: 637,
-                                    columnNumber: 247
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                            lineNumber: 637,
-                            columnNumber: 159
-                        }, ("TURBOPACK compile-time value", void 0))
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 637,
-                    columnNumber: 76
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 637,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[75] = t67;
-    } else {
-        t67 = $[75];
-    }
-    let t68;
-    if ($[76] === Symbol.for("react.memo_cache_sentinel")) {
-        t68 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "bg-white rounded-2xl p-6 shadow-lg",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center mb-4",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-blue-100 p-3 rounded-lg mr-4",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                className: "w-6 h-6 text-blue-600",
-                                fill: "currentColor",
-                                viewBox: "0 0 20 20",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                    fillRule: "evenodd",
-                                    d: "M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z",
-                                    clipRule: "evenodd"
-                                }, void 0, false, {
-                                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                    lineNumber: 644,
-                                    columnNumber: 231
-                                }, ("TURBOPACK compile-time value", void 0))
-                            }, void 0, false, {
-                                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                lineNumber: 644,
-                                columnNumber: 152
-                            }, ("TURBOPACK compile-time value", void 0))
-                        }, void 0, false, {
-                            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                            lineNumber: 644,
-                            columnNumber: 103
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "font-semibold text-blue-900",
-                                    children: "Science Exhibition"
-                                }, void 0, false, {
-                                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                    lineNumber: 644,
-                                    columnNumber: 449
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-gray-600",
-                                    children: "Dec 15, 2023 • 9:00 AM"
-                                }, void 0, false, {
-                                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                    lineNumber: 644,
-                                    columnNumber: 516
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                            lineNumber: 644,
-                            columnNumber: 444
-                        }, ("TURBOPACK compile-time value", void 0))
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 644,
-                    columnNumber: 63
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-gray-600 text-sm mb-4",
-                    children: "Annual science exhibition showcasing innovative projects by our students. Open to all parents and visitors."
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 644,
-                    columnNumber: 591
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium",
-                    children: "Academic"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 644,
-                    columnNumber: 744
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 644,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[76] = t68;
-    } else {
-        t68 = $[76];
-    }
-    let t69;
-    if ($[77] === Symbol.for("react.memo_cache_sentinel")) {
-        t69 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "bg-white rounded-2xl p-6 shadow-lg",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center mb-4",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-orange-100 p-3 rounded-lg mr-4",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                className: "w-6 h-6 text-orange-600",
-                                fill: "currentColor",
-                                viewBox: "0 0 20 20",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                    d: "M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"
-                                }, void 0, false, {
-                                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                    lineNumber: 651,
-                                    columnNumber: 235
-                                }, ("TURBOPACK compile-time value", void 0))
-                            }, void 0, false, {
-                                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                lineNumber: 651,
-                                columnNumber: 154
-                            }, ("TURBOPACK compile-time value", void 0))
-                        }, void 0, false, {
-                            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                            lineNumber: 651,
-                            columnNumber: 103
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "font-semibold text-blue-900",
-                                    children: "Annual Cultural Fest"
-                                }, void 0, false, {
-                                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                    lineNumber: 651,
-                                    columnNumber: 460
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-gray-600",
-                                    children: "Dec 22, 2023 • 10:00 AM"
-                                }, void 0, false, {
-                                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                    lineNumber: 651,
-                                    columnNumber: 529
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                            lineNumber: 651,
-                            columnNumber: 455
-                        }, ("TURBOPACK compile-time value", void 0))
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 651,
-                    columnNumber: 63
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-gray-600 text-sm mb-4",
-                    children: "Cultural festival with music, dance, drama, and art competitions. Celebrate diversity and talent."
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 651,
-                    columnNumber: 605
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-medium",
-                    children: "Cultural"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 651,
-                    columnNumber: 748
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 651,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[77] = t69;
-    } else {
-        t69 = $[77];
-    }
-    let t70;
-    if ($[78] === Symbol.for("react.memo_cache_sentinel")) {
-        t70 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            className: "py-20 bg-white",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
-                children: [
-                    t59,
-                    t67,
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
-                        children: [
-                            t68,
-                            t69,
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white rounded-2xl p-6 shadow-lg",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center mb-4",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-green-100 p-3 rounded-lg mr-4",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                    className: "w-6 h-6 text-green-600",
-                                                    fill: "currentColor",
-                                                    viewBox: "0 0 20 20",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                        fillRule: "evenodd",
-                                                        d: "M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z",
-                                                        clipRule: "evenodd"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                                        lineNumber: 658,
-                                                        columnNumber: 403
-                                                    }, ("TURBOPACK compile-time value", void 0))
-                                                }, void 0, false, {
-                                                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                                    lineNumber: 658,
-                                                    columnNumber: 323
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            }, void 0, false, {
-                                                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                                lineNumber: 658,
-                                                columnNumber: 273
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "font-semibold text-blue-900",
-                                                        children: "Sports Day"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                                        lineNumber: 658,
-                                                        columnNumber: 926
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-sm text-gray-600",
-                                                        children: "Jan 10, 2024 • 8:00 AM"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                                        lineNumber: 658,
-                                                        columnNumber: 985
-                                                    }, ("TURBOPACK compile-time value", void 0))
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                                lineNumber: 658,
-                                                columnNumber: 921
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                        lineNumber: 658,
-                                        columnNumber: 233
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-600 text-sm mb-4",
-                                        children: "Annual sports day with various athletic events, team sports, and prize distribution ceremony."
-                                    }, void 0, false, {
-                                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                        lineNumber: 658,
-                                        columnNumber: 1060
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium",
-                                        children: "Sports"
-                                    }, void 0, false, {
-                                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                        lineNumber: 658,
-                                        columnNumber: 1199
-                                    }, ("TURBOPACK compile-time value", void 0))
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                lineNumber: 658,
-                                columnNumber: 181
-                            }, ("TURBOPACK compile-time value", void 0))
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                        lineNumber: 658,
-                        columnNumber: 113
-                    }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
-                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 658,
-                columnNumber: 47
-            }, ("TURBOPACK compile-time value", void 0))
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 658,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[78] = t70;
-    } else {
-        t70 = $[78];
-    }
-    let t71;
-    if ($[79] === Symbol.for("react.memo_cache_sentinel")) {
-        t71 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "text-center mb-16",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "font-display text-4xl font-bold text-blue-900 mb-4",
-                    children: "Tours & Excursions"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 665,
-                    columnNumber: 46
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-xl text-gray-600 max-w-3xl mx-auto",
-                    children: "Educational tours and excursions that provide real-world learning experiences and exposure."
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 665,
-                    columnNumber: 140
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 665,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[79] = t71;
-    } else {
-        t71 = $[79];
-    }
-    let t72;
-    let t73;
-    let t74;
-    if ($[80] === Symbol.for("react.memo_cache_sentinel")) {
-        t72 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    if ($[68] === Symbol.for("react.memo_cache_sentinel")) {
+        t60 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "relative h-48 mb-4",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 src: "/resources/science-lab.jpg",
@@ -2715,46 +2139,46 @@ const LifeAtLGS = ()=>{
                 className: "object-cover rounded-lg"
             }, void 0, false, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 674,
+                lineNumber: 588,
                 columnNumber: 47
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 674,
+            lineNumber: 588,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        t73 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+        t61 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
             className: "font-display text-xl font-semibold text-blue-900 mb-3",
             children: "Industrial Visits"
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 675,
+            lineNumber: 589,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        t74 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+        t62 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             className: "text-gray-600 text-sm mb-4",
             children: "Regular visits to industries, research centers, and manufacturing units to provide practical exposure."
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 676,
+            lineNumber: 590,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[80] = t72;
-        $[81] = t73;
-        $[82] = t74;
+        $[68] = t60;
+        $[69] = t61;
+        $[70] = t62;
     } else {
-        t72 = $[80];
-        t73 = $[81];
-        t74 = $[82];
+        t60 = $[68];
+        t61 = $[69];
+        t62 = $[70];
     }
-    let t75;
-    if ($[83] === Symbol.for("react.memo_cache_sentinel")) {
-        t75 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t63;
+    if ($[71] === Symbol.for("react.memo_cache_sentinel")) {
+        t63 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "bg-white rounded-2xl p-6 shadow-lg",
             children: [
-                t72,
-                t73,
-                t74,
+                t60,
+                t61,
+                t62,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center text-sm text-gray-500",
                     children: [
@@ -2768,36 +2192,36 @@ const LifeAtLGS = ()=>{
                                 clipRule: "evenodd"
                             }, void 0, false, {
                                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                lineNumber: 687,
+                                lineNumber: 601,
                                 columnNumber: 205
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                            lineNumber: 687,
+                            lineNumber: 601,
                             columnNumber: 135
                         }, ("TURBOPACK compile-time value", void 0)),
                         "Quarterly visits"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 687,
+                    lineNumber: 601,
                     columnNumber: 78
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 687,
+            lineNumber: 601,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[83] = t75;
+        $[71] = t63;
     } else {
-        t75 = $[83];
+        t63 = $[71];
     }
-    let t76;
-    let t77;
-    let t78;
-    if ($[84] === Symbol.for("react.memo_cache_sentinel")) {
-        t76 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t64;
+    let t65;
+    let t66;
+    if ($[72] === Symbol.for("react.memo_cache_sentinel")) {
+        t64 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "relative h-48 mb-4",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 src: "/resources/library-students.jpg",
@@ -2806,46 +2230,46 @@ const LifeAtLGS = ()=>{
                 className: "object-cover rounded-lg"
             }, void 0, false, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 696,
+                lineNumber: 610,
                 columnNumber: 47
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 696,
+            lineNumber: 610,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        t77 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+        t65 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
             className: "font-display text-xl font-semibold text-blue-900 mb-3",
             children: "Educational Tours"
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 697,
+            lineNumber: 611,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        t78 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+        t66 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             className: "text-gray-600 text-sm mb-4",
             children: "National and international educational tours to historical sites, museums, and universities."
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 698,
+            lineNumber: 612,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[84] = t76;
-        $[85] = t77;
-        $[86] = t78;
+        $[72] = t64;
+        $[73] = t65;
+        $[74] = t66;
     } else {
-        t76 = $[84];
-        t77 = $[85];
-        t78 = $[86];
+        t64 = $[72];
+        t65 = $[73];
+        t66 = $[74];
     }
-    let t79;
-    if ($[87] === Symbol.for("react.memo_cache_sentinel")) {
-        t79 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t67;
+    if ($[75] === Symbol.for("react.memo_cache_sentinel")) {
+        t67 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "bg-white rounded-2xl p-6 shadow-lg",
             children: [
-                t76,
-                t77,
-                t78,
+                t64,
+                t65,
+                t66,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center text-sm text-gray-500",
                     children: [
@@ -2859,36 +2283,36 @@ const LifeAtLGS = ()=>{
                                 clipRule: "evenodd"
                             }, void 0, false, {
                                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                lineNumber: 709,
+                                lineNumber: 623,
                                 columnNumber: 205
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                            lineNumber: 709,
+                            lineNumber: 623,
                             columnNumber: 135
                         }, ("TURBOPACK compile-time value", void 0)),
                         "Annual tours"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 709,
+                    lineNumber: 623,
                     columnNumber: 78
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 709,
+            lineNumber: 623,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[87] = t79;
+        $[75] = t67;
     } else {
-        t79 = $[87];
+        t67 = $[75];
     }
-    let t80;
-    let t81;
-    let t82;
-    if ($[88] === Symbol.for("react.memo_cache_sentinel")) {
-        t80 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t68;
+    let t69;
+    let t70;
+    if ($[76] === Symbol.for("react.memo_cache_sentinel")) {
+        t68 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "relative h-48 mb-4",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 src: "/resources/faculty-team.jpg",
@@ -2897,57 +2321,57 @@ const LifeAtLGS = ()=>{
                 className: "object-cover rounded-lg"
             }, void 0, false, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 718,
+                lineNumber: 632,
                 columnNumber: 47
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 718,
+            lineNumber: 632,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        t81 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+        t69 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
             className: "font-display text-xl font-semibold text-blue-900 mb-3",
             children: "Adventure Camps"
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 719,
+            lineNumber: 633,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        t82 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+        t70 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             className: "text-gray-600 text-sm mb-4",
             children: "Outdoor adventure camps focusing on team building, leadership, and personality development."
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 720,
+            lineNumber: 634,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[88] = t80;
-        $[89] = t81;
-        $[90] = t82;
+        $[76] = t68;
+        $[77] = t69;
+        $[78] = t70;
     } else {
-        t80 = $[88];
-        t81 = $[89];
-        t82 = $[90];
+        t68 = $[76];
+        t69 = $[77];
+        t70 = $[78];
     }
-    let t83;
-    if ($[91] === Symbol.for("react.memo_cache_sentinel")) {
-        t83 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+    let t71;
+    if ($[79] === Symbol.for("react.memo_cache_sentinel")) {
+        t71 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             className: "py-20 bg-gray-50",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
                 children: [
-                    t71,
+                    t59,
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
                         children: [
-                            t75,
-                            t79,
+                            t63,
+                            t67,
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "bg-white rounded-2xl p-6 shadow-lg",
                                 children: [
-                                    t80,
-                                    t81,
-                                    t82,
+                                    t68,
+                                    t69,
+                                    t70,
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center text-sm text-gray-500",
                                         children: [
@@ -2961,51 +2385,51 @@ const LifeAtLGS = ()=>{
                                                     clipRule: "evenodd"
                                                 }, void 0, false, {
                                                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                                    lineNumber: 731,
+                                                    lineNumber: 645,
                                                     columnNumber: 372
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                                lineNumber: 731,
+                                                lineNumber: 645,
                                                 columnNumber: 302
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Bi-annual camps"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                        lineNumber: 731,
+                                        lineNumber: 645,
                                         columnNumber: 245
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                lineNumber: 731,
+                                lineNumber: 645,
                                 columnNumber: 178
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                        lineNumber: 731,
+                        lineNumber: 645,
                         columnNumber: 110
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 731,
+                lineNumber: 645,
                 columnNumber: 49
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 731,
+            lineNumber: 645,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[91] = t83;
+        $[79] = t71;
     } else {
-        t83 = $[91];
+        t71 = $[79];
     }
-    let t84;
-    if ($[92] === Symbol.for("react.memo_cache_sentinel")) {
-        t84 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t72;
+    if ($[80] === Symbol.for("react.memo_cache_sentinel")) {
+        t72 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "text-center mb-16",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -3013,7 +2437,7 @@ const LifeAtLGS = ()=>{
                     children: "Gallery & Media"
                 }, void 0, false, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 738,
+                    lineNumber: 652,
                     columnNumber: 46
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3021,22 +2445,22 @@ const LifeAtLGS = ()=>{
                     children: "Capturing the memorable moments and achievements that define life at LGS."
                 }, void 0, false, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 738,
+                    lineNumber: 652,
                     columnNumber: 137
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 738,
+            lineNumber: 652,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[92] = t84;
+        $[80] = t72;
     } else {
-        t84 = $[92];
+        t72 = $[80];
     }
-    let t85;
-    if ($[93] !== activeGalleryFilter) {
-        t85 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t73;
+    if ($[81] !== activeGalleryFilter) {
+        t73 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex flex-wrap justify-center gap-4 mb-12",
             children: [
                 "all",
@@ -3046,7 +2470,7 @@ const LifeAtLGS = ()=>{
                 "cultural"
             ].map((filter_0)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: ()=>setActiveGalleryFilter(filter_0),
-                    className: `px-6 py-3 rounded-full border-2 font-semibold transition-all duration-300 ${activeGalleryFilter === filter_0 ? "bg-orange-500 border-orange-500 text-white" : "border-orange-500 text-orange-500 hover:bg-orange-50"}`,
+                    className: `px-6 py-3 rounded-full border-2 font-semibold transition-all duration-300 ${activeGalleryFilter === filter_0 ? "bg-sky-600 border-sky-600 text-white" : "border-sky-600 text-sky-600 hover:bg-sky-50"}`,
                     children: [
                         filter_0.charAt(0).toUpperCase() + filter_0.slice(1),
                         " ",
@@ -3054,96 +2478,96 @@ const LifeAtLGS = ()=>{
                     ]
                 }, filter_0, true, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 745,
+                    lineNumber: 659,
                     columnNumber: 140
                 }, ("TURBOPACK compile-time value", void 0)))
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 745,
+            lineNumber: 659,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[93] = activeGalleryFilter;
-        $[94] = t85;
+        $[81] = activeGalleryFilter;
+        $[82] = t73;
     } else {
-        t85 = $[94];
+        t73 = $[82];
     }
-    let t86;
-    if ($[95] !== filteredGallery || $[96] !== visiblePhotos) {
-        t86 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t74;
+    if ($[83] !== filteredGallery || $[84] !== visiblePhotos) {
+        t74 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4",
-            children: filteredGallery.slice(0, visiblePhotos).map(_temp6)
+            children: filteredGallery.slice(0, visiblePhotos).map(_temp3)
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 753,
+            lineNumber: 667,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[95] = filteredGallery;
-        $[96] = visiblePhotos;
-        $[97] = t86;
+        $[83] = filteredGallery;
+        $[84] = visiblePhotos;
+        $[85] = t74;
     } else {
-        t86 = $[97];
+        t74 = $[85];
     }
-    let t87;
-    if ($[98] !== filteredGallery.length || $[99] !== visiblePhotos) {
-        t87 = visiblePhotos < filteredGallery.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t75;
+    if ($[86] !== filteredGallery.length || $[87] !== visiblePhotos) {
+        t75 = visiblePhotos < filteredGallery.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "text-center mt-12",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                onClick: ()=>setVisiblePhotos(_temp7),
-                className: "bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300",
+                onClick: ()=>setVisiblePhotos(_temp4),
+                className: "bg-sky-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-sky-700 transition-colors duration-300",
                 children: "Load More Photos"
             }, void 0, false, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 762,
+                lineNumber: 676,
                 columnNumber: 88
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 762,
+            lineNumber: 676,
             columnNumber: 53
         }, ("TURBOPACK compile-time value", void 0));
-        $[98] = filteredGallery.length;
-        $[99] = visiblePhotos;
-        $[100] = t87;
+        $[86] = filteredGallery.length;
+        $[87] = visiblePhotos;
+        $[88] = t75;
     } else {
-        t87 = $[100];
+        t75 = $[88];
     }
-    let t88;
-    if ($[101] !== t85 || $[102] !== t86 || $[103] !== t87) {
-        t88 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+    let t76;
+    if ($[89] !== t73 || $[90] !== t74 || $[91] !== t75) {
+        t76 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             className: "py-20 bg-white",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
                 children: [
-                    t84,
-                    t85,
-                    t86,
-                    t87
+                    t72,
+                    t73,
+                    t74,
+                    t75
                 ]
             }, void 0, true, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 771,
+                lineNumber: 685,
                 columnNumber: 47
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 771,
+            lineNumber: 685,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[101] = t85;
-        $[102] = t86;
-        $[103] = t87;
-        $[104] = t88;
+        $[89] = t73;
+        $[90] = t74;
+        $[91] = t75;
+        $[92] = t76;
     } else {
-        t88 = $[104];
+        t76 = $[92];
     }
-    let t89;
-    if ($[105] !== selectedFacility) {
-        t89 = selectedFacility && facilities[selectedFacility] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t77;
+    if ($[93] !== selectedFacility) {
+        t77 = selectedFacility && facilities[selectedFacility] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4",
             onClick: ()=>setSelectedFacility(null),
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto",
-                onClick: _temp8,
+                onClick: _temp5,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "p-6",
                     children: [
@@ -3155,7 +2579,7 @@ const LifeAtLGS = ()=>{
                                     children: facilities[selectedFacility].title
                                 }, void 0, false, {
                                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                    lineNumber: 781,
+                                    lineNumber: 695,
                                     columnNumber: 379
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3173,23 +2597,23 @@ const LifeAtLGS = ()=>{
                                             d: "M6 18L18 6M6 6l12 12"
                                         }, void 0, false, {
                                             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                            lineNumber: 781,
+                                            lineNumber: 695,
                                             columnNumber: 657
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                        lineNumber: 781,
+                                        lineNumber: 695,
                                         columnNumber: 578
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                                    lineNumber: 781,
+                                    lineNumber: 695,
                                     columnNumber: 482
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                            lineNumber: 781,
+                            lineNumber: 695,
                             columnNumber: 323
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3197,56 +2621,55 @@ const LifeAtLGS = ()=>{
                             children: facilities[selectedFacility].content
                         }, void 0, false, {
                             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                            lineNumber: 781,
+                            lineNumber: 695,
                             columnNumber: 772
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 781,
+                    lineNumber: 695,
                     columnNumber: 302
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 781,
+                lineNumber: 695,
                 columnNumber: 201
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 781,
+            lineNumber: 695,
             columnNumber: 63
         }, ("TURBOPACK compile-time value", void 0));
-        $[105] = selectedFacility;
-        $[106] = t89;
+        $[93] = selectedFacility;
+        $[94] = t77;
     } else {
-        t89 = $[106];
+        t77 = $[94];
     }
-    let t90;
-    if ($[107] !== t39 || $[108] !== t88 || $[109] !== t89) {
-        t90 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t78;
+    if ($[95] !== t39 || $[96] !== t76 || $[97] !== t77) {
+        t78 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "bg-white",
             children: [
                 t35,
                 t39,
                 t58,
-                t70,
-                t83,
-                t88,
-                t89
+                t71,
+                t76,
+                t77
             ]
         }, void 0, true, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-            lineNumber: 789,
+            lineNumber: 703,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[107] = t39;
-        $[108] = t88;
-        $[109] = t89;
-        $[110] = t90;
+        $[95] = t39;
+        $[96] = t76;
+        $[97] = t77;
+        $[98] = t78;
     } else {
-        t90 = $[110];
+        t78 = $[98];
     }
-    return t90;
+    return t78;
 };
 _s(LifeAtLGS, "EdHIpbcoo6EeL9QD0hatzWNmQtI=");
 _c = LifeAtLGS;
@@ -3280,7 +2703,7 @@ function _temp2(item_0) {
                         className: "object-cover"
                     }, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                        lineNumber: 810,
+                        lineNumber: 724,
                         columnNumber: 185
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3288,13 +2711,13 @@ function _temp2(item_0) {
                         children: item_0.year
                     }, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                        lineNumber: 810,
+                        lineNumber: 724,
                         columnNumber: 268
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 810,
+                lineNumber: 724,
                 columnNumber: 154
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3305,15 +2728,15 @@ function _temp2(item_0) {
                         children: item_0.name
                     }, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                        lineNumber: 810,
+                        lineNumber: 724,
                         columnNumber: 442
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-orange-500 font-medium mb-3",
+                        className: "text-sky-600 font-medium mb-3",
                         children: item_0.achievement
                     }, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                        lineNumber: 810,
+                        lineNumber: 724,
                         columnNumber: 526
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3321,8 +2744,8 @@ function _temp2(item_0) {
                         children: item_0.description
                     }, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                        lineNumber: 810,
-                        columnNumber: 598
+                        lineNumber: 724,
+                        columnNumber: 595
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "border-t pt-4",
@@ -3335,51 +2758,28 @@ function _temp2(item_0) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                            lineNumber: 810,
-                            columnNumber: 695
+                            lineNumber: 724,
+                            columnNumber: 692
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                        lineNumber: 810,
-                        columnNumber: 664
+                        lineNumber: 724,
+                        columnNumber: 661
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 810,
+                lineNumber: 724,
                 columnNumber: 421
             }, this)
         ]
     }, item_0.id, true, {
         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-        lineNumber: 810,
+        lineNumber: 724,
         columnNumber: 10
     }, this);
 }
-function _temp3(day) {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "text-center font-semibold text-gray-600 py-2",
-        children: day
-    }, day, false, {
-        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-        lineNumber: 813,
-        columnNumber: 10
-    }, this);
-}
-function _temp4(_, i) {
-    return i + 1;
-}
-function _temp5(day_0) {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `text-center py-3 rounded-lg cursor-pointer hover:bg-gray-200 transition-colors ${day_0 === 15 ? "bg-blue-100 text-blue-900 font-semibold" : day_0 === 22 ? "bg-orange-100 text-orange-900 font-semibold" : ""}`,
-        children: day_0
-    }, day_0, false, {
-        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-        lineNumber: 819,
-        columnNumber: 10
-    }, this);
-}
-function _temp6(item_1, index) {
+function _temp3(item_1, index) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "gallery-item relative h-48 group cursor-pointer overflow-hidden rounded-lg",
         children: [
@@ -3390,7 +2790,7 @@ function _temp6(item_1, index) {
                 className: "object-cover transition-transform duration-500 group-hover:scale-110"
             }, void 0, false, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 822,
+                lineNumber: 727,
                 columnNumber: 114
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3400,25 +2800,25 @@ function _temp6(item_1, index) {
                     children: item_1.title
                 }, void 0, false, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                    lineNumber: 822,
+                    lineNumber: 727,
                     columnNumber: 397
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-                lineNumber: 822,
+                lineNumber: 727,
                 columnNumber: 252
             }, this)
         ]
     }, index, true, {
         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/app/life-at-lgs/page.tsx",
-        lineNumber: 822,
+        lineNumber: 727,
         columnNumber: 10
     }, this);
 }
-function _temp7(prev) {
+function _temp4(prev) {
     return prev + 4;
 }
-function _temp8(e) {
+function _temp5(e) {
     return e.stopPropagation();
 }
 var _c;

@@ -1,6 +1,6 @@
 var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/app/page.js")
 R.c("server/chunks/ssr/1f29d_next_dist_0fd3d323._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__3f3a3c23._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__5f8e693d._.js")
 R.c("server/chunks/ssr/1f29d_29267b35._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__e8a2741f._.js")
 R.c("server/chunks/ssr/OneDrive_Desktop_lgs_Learners_PU_College_src_app_1976eab2._.js")

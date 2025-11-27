@@ -25,142 +25,141 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-white/95 backdrop-blur-sm shadow-sm'
+            className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${isScrolled
+                    ? 'bg-white/90 backdrop-blur-md shadow-lg py-2'
+                    : 'bg-transparent py-4'
                 }`}
-            style={{ transform: isScrolled ? 'translateY(-100%)' : 'translateY(0)' }}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
-                    <div className="flex items-center gap-2">
-                        <Image
-                            src="/resources/logo.png"
-                            alt="LGS Logo"
-                            width={48}
-                            height={48}
-                            className="h-12 w-auto object-contain"
-                        />
-                        <div className="font-display font-bold text-xl sm:text-2xl text-sky-700 tracking-tight">
-                            Learners PU College
+                <div className={`flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-16' : 'h-20'}`}>
+                    {/* Logo Section */}
+                    <div className="flex items-center gap-3 group cursor-pointer">
+                        <div className="relative w-12 h-12 transition-transform duration-300 group-hover:scale-110">
+                            <Image
+                                src="/resources/logo.png"
+                                alt="LGS Logo"
+                                fill
+                                className="object-contain drop-shadow-md"
+                            />
+                        </div>
+                        <div className="flex flex-col">
+                            <span className="font-display font-bold text-xl sm:text-2xl text-slate-800 tracking-tight leading-none group-hover:text-sky-700 transition-colors duration-300">
+                                Learners PU College
+                            </span>
+                            <span className={`text-xs font-medium text-sky-600 tracking-widest uppercase transition-opacity duration-300 ${isScrolled ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100'}`}>
+                                Excellence in Education
+                            </span>
                         </div>
                     </div>
-                    <div className="hidden md:flex space-x-8 items-center">
-                        <Link href="/" className="nav-link text-sky-700 font-medium">
-                            {t('nav-home')}
-                        </Link>
-                        <Link href="/about" className="nav-link text-gray-600 hover:text-sky-700 font-medium">
-                            {t('nav-about')}
-                        </Link>
-                        <Link href="/courses" className="nav-link text-gray-600 hover:text-sky-700 font-medium">
-                            {t('nav-courses')}
-                        </Link>
-                        <Link href="/life-at-lgs" className="nav-link text-gray-600 hover:text-sky-700 font-medium">
-                            {t('nav-life')}
-                        </Link>
-                        <Link href="/connect" className="nav-link text-gray-600 hover:text-sky-700 font-medium">
-                            {t('nav-connect')}
-                        </Link>
+
+                    {/* Desktop Navigation */}
+                    <div className="hidden md:flex items-center gap-1">
+                        {[
+                            { name: 'nav-home', path: '/' },
+                            { name: 'nav-about', path: '/about' },
+                            { name: 'nav-courses', path: '/courses' },
+                            { name: 'nav-life', path: '/life-at-lgs' },
+                            { name: 'nav-connect', path: '/connect' },
+                        ].map((item) => (
+                            <Link
+                                key={item.name}
+                                href={item.path}
+                                className="relative px-4 py-2 text-slate-600 font-medium hover:text-sky-700 transition-colors duration-300 group"
+                            >
+                                {t(item.name)}
+                                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-sky-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                            </Link>
+                        ))}
 
                         {/* Language Dropdown */}
-                        <div className="relative group">
-                            <button className="flex items-center space-x-1 text-gray-600 hover:text-sky-700 font-medium focus:outline-none">
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
-                                    ></path>
-                                </svg>
-                                <span>
-                                    {language === 'en' ? 'En' :
-                                        language === 'hi' ? 'Hi' :
-                                            language === 'kn' ? 'Kn' :
-                                                language === 'te' ? 'Te' :
-                                                    language === 'ta' ? 'Ta' : 'Ml'}
+                        <div className="relative group ml-4">
+                            <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 hover:bg-sky-50 text-slate-700 hover:text-sky-700 transition-all duration-300 border border-slate-200 hover:border-sky-200 shadow-sm hover:shadow-md">
+                                <span className="text-lg">
+                                    {language === 'en' ? '🇺🇸' :
+                                        language === 'hi' ? '🇮🇳' :
+                                            language === 'kn' ? '🇮🇳' :
+                                                language === 'te' ? '🇮🇳' :
+                                                    language === 'ta' ? '🇮🇳' : '🇮🇳'}
                                 </span>
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <span className="font-semibold text-sm">
+                                    {language === 'en' ? 'EN' :
+                                        language === 'hi' ? 'HI' :
+                                            language === 'kn' ? 'KN' :
+                                                language === 'te' ? 'TE' :
+                                                    language === 'ta' ? 'TA' : 'ML'}
+                                </span>
+                                <svg className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
-                            <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right z-50 border border-gray-100">
-                                <div className="py-1">
-                                    <button
-                                        onClick={() => setLanguage('en')}
-                                        className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700"
-                                    >
-                                        🇺🇸 English
-                                    </button>
-                                    <button
-                                        onClick={() => setLanguage('hi')}
-                                        className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700"
-                                    >
-                                        🇮🇳 हिन्दी
-                                    </button>
-                                    <button
-                                        onClick={() => setLanguage('kn')}
-                                        className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700"
-                                    >
-                                        🇮🇳 ಕನ್ನಡ
-                                    </button>
-                                    <button
-                                        onClick={() => setLanguage('te')}
-                                        className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700"
-                                    >
-                                        🇮🇳 తెలుగు
-                                    </button>
-                                    <button
-                                        onClick={() => setLanguage('ta')}
-                                        className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700"
-                                    >
-                                        🇮🇳 தமிழ்
-                                    </button>
-                                    <button
-                                        onClick={() => setLanguage('ml')}
-                                        className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700"
-                                    >
-                                        🇮🇳 മലയാളം
-                                    </button>
+
+                            <div className="absolute right-0 mt-2 w-48 bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right z-50 border border-slate-100 overflow-hidden ring-1 ring-black/5">
+                                <div className="p-1">
+                                    {[
+                                        { code: 'en', label: 'English', flag: '🇺🇸' },
+                                        { code: 'hi', label: 'हिन्दी', flag: '🇮🇳' },
+                                        { code: 'kn', label: 'ಕನ್ನಡ', flag: '🇮🇳' },
+                                        { code: 'te', label: 'తెలుగు', flag: '🇮🇳' },
+                                        { code: 'ta', label: 'தமிழ்', flag: '🇮🇳' },
+                                        { code: 'ml', label: 'മലയാളം', flag: '🇮🇳' },
+                                    ].map((lang) => (
+                                        <button
+                                            key={lang.code}
+                                            onClick={() => setLanguage(lang.code as any)}
+                                            className={`flex items-center gap-3 w-full text-left px-4 py-2.5 text-sm rounded-xl transition-colors duration-200 ${language === lang.code
+                                                    ? 'bg-sky-50 text-sky-700 font-semibold'
+                                                    : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                                                }`}
+                                        >
+                                            <span className="text-lg">{lang.flag}</span>
+                                            {lang.label}
+                                        </button>
+                                    ))}
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden p-2 text-sky-700"
+                        className="md:hidden p-2 text-slate-600 hover:text-sky-700 transition-colors"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M4 6h16M4 12h16M4 18h16"
-                            ></path>
-                        </svg>
+                        {isMobileMenuOpen ? (
+                            <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        ) : (
+                            <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        )}
                     </button>
                 </div>
             </div>
 
             {/* Mobile Menu */}
             <div
-                className={`md:hidden fixed top-16 left-0 w-full bg-white shadow-lg z-40 transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
+                className={`md:hidden fixed inset-x-0 top-[80px] bg-white/95 backdrop-blur-xl shadow-2xl z-40 transition-all duration-500 ease-in-out origin-top ${isMobileMenuOpen ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0 pointer-events-none'
                     }`}
             >
-                <div className="px-4 py-6 space-y-4">
-                    <Link href="/" className="block text-blue-900 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-                        {t('nav-home')}
-                    </Link>
-                    <Link href="/about" className="block text-gray-700 hover:text-blue-900 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-                        {t('nav-about')}
-                    </Link>
-                    <Link href="/courses" className="block text-gray-700 hover:text-blue-900 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-                        {t('nav-courses')}
-                    </Link>
-                    <Link href="/life-at-lgs" className="block text-gray-700 hover:text-blue-900 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-                        {t('nav-life')}
-                    </Link>
-                    <Link href="/connect" className="block text-gray-700 hover:text-blue-900 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-                        {t('nav-connect')}
-                    </Link>
+                <div className="px-6 py-8 space-y-4">
+                    {[
+                        { name: 'nav-home', path: '/' },
+                        { name: 'nav-about', path: '/about' },
+                        { name: 'nav-courses', path: '/courses' },
+                        { name: 'nav-life', path: '/life-at-lgs' },
+                        { name: 'nav-connect', path: '/connect' },
+                    ].map((item) => (
+                        <Link
+                            key={item.name}
+                            href={item.path}
+                            className="block text-lg font-medium text-slate-600 hover:text-sky-700 hover:bg-sky-50 px-4 py-3 rounded-xl transition-all duration-300"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            {t(item.name)}
+                        </Link>
+                    ))}
                 </div>
             </div>
         </nav>

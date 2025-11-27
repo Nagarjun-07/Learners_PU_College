@@ -29,7 +29,19 @@ const translations = {
     },
     'nav-about': {
         en: 'About Us',
-        hi: 'हमारे बारे में'
+        hi: 'हमारे बारे में',
+        kn: 'ನಮ್ಮ ಬಗ್ಗೆ',
+        te: 'మా గురించి',
+        ta: 'எங்களைப் பற்றி',
+        ml: 'ഞങ്ങളെക്കുറിച്ച്'
+    },
+    'nav-courses': {
+        en: 'Courses',
+        hi: 'पाठ्यक्रम',
+        kn: 'ಕೋರ್ಸ್‌ಗಳು',
+        te: 'కోర్సులు',
+        ta: 'பாடநெறிகள்',
+        ml: 'കോഴ്‌സുകൾ'
     },
     'nav-life': {
         en: 'Life at LGS',
@@ -113,6 +125,54 @@ const translations = {
         ml: 'അധ്യാപകർ'
     },
     // Sections Headers
+    'section-main-streams': {
+        en: 'Our Main Streams',
+        hi: 'हमारी मुख्य धाराएँ',
+        kn: 'ನಮ್ಮ ಮುಖ್ಯ ವಿಭಾಗಗಳು',
+        te: 'మా ప్రధాన విభాగాలు',
+        ta: 'எங்கள் முக்கிய பிரிவுகள்',
+        ml: 'ഞങ്ങളുടെ പ്രധാന വിഭാഗങ്ങൾ'
+    },
+    'section-main-streams-desc': {
+        en: 'Core combinations for a strong foundation.',
+        hi: 'मजबूत नींव के लिए मुख्य संयोजन।',
+        kn: 'ಬಲವಾದ ಅಡಿಪಾಯಕ್ಕಾಗಿ ಪ್ರಮುಖ ಸಂಯೋಜನೆಗಳು.',
+        te: 'బలమైన పునాది కోసం ప్రధాన కలయికలు.',
+        ta: 'வலுவான அடித்தளத்திற்கான முக்கிய சேர்க்கைகள்.',
+        ml: 'ശക്തമായ അടിത്തറയ്ക്കുള്ള പ്രധാന കോമ്പിനേഷനുകൾ.'
+    },
+    'stream-pcmb': {
+        en: 'PCMB',
+        hi: 'PCMB',
+        kn: 'PCMB',
+        te: 'PCMB',
+        ta: 'PCMB',
+        ml: 'PCMB'
+    },
+    'stream-pcmb-desc': {
+        en: 'Physics, Chemistry, Mathematics, Biology',
+        hi: 'भौतिकी, रसायन विज्ञान, गणित, जीवविज्ञान',
+        kn: 'ಭೌತಶಾಸ್ತ್ರ, ರಸಾಯನಶಾಸ್ತ್ರ, ಗಣಿತ, ಜೀವಶಾಸ್ತ್ರ',
+        te: 'భౌతికశాస్త్రం, రసాయనశాస్త్రం, గణితం, జీవశాస్త్రం',
+        ta: 'இயற்பியல், வேதியியல், கணிதம், உயிரியல்',
+        ml: 'ഫിസിക്സ്, കെമിസ്ട്രി, മാത്തമാറ്റിക്സ്, ബയോളജി'
+    },
+    'stream-pcmc': {
+        en: 'PCMC',
+        hi: 'PCMC',
+        kn: 'PCMC',
+        te: 'PCMC',
+        ta: 'PCMC',
+        ml: 'PCMC'
+    },
+    'stream-pcmc-desc': {
+        en: 'Physics, Chemistry, Mathematics, Computer Science',
+        hi: 'भौतिकी, रसायन विज्ञान, गणित, कंप्यूटर विज्ञान',
+        kn: 'ಭೌತಶಾಸ್ತ್ರ, ರಸಾಯನಶಾಸ್ತ್ರ, ಗಣಿತ, ಗಣಕ ವಿಜ್ಞಾನ',
+        te: 'భౌతికశాస్త్రం, రసాయనశాస్త్రం, గణితం, కంప్యూటర్ సైన్స్',
+        ta: 'இயற்பியல், வேதியியல், கணிதம், கணினி அறிவியல்',
+        ml: 'ഫിസിക്സ്, കെമിസ്ട്രി, മാത്തമാറ്റിക്സ്, കമ്പ്യൂട്ടർ സയൻസ്'
+    },
     'section-streams': {
         en: 'Our Academic Streams',
         hi: 'हमारे शैक्षणिक धाराएँ',
@@ -488,11 +548,11 @@ const translations = {
 const LanguageProvider = (t0)=>{
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(12);
-    if ($[0] !== "7d064e873f010c09a4a4fe3b436401213fbbfaa2402d39e396147c892d0ffcd0") {
+    if ($[0] !== "e9df52822e5eab9df9667e57dc6752ce3c500dbb3894db019a0fc9bed83fa072") {
         for(let $i = 0; $i < 12; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "7d064e873f010c09a4a4fe3b436401213fbbfaa2402d39e396147c892d0ffcd0";
+        $[0] = "e9df52822e5eab9df9667e57dc6752ce3c500dbb3894db019a0fc9bed83fa072";
     }
     const { children } = t0;
     const [language, setLanguage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("en");
@@ -560,7 +620,7 @@ const LanguageProvider = (t0)=>{
             children: children
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/context/LanguageContext.tsx",
-            lineNumber: 544,
+            lineNumber: 604,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
         $[9] = children;
@@ -576,11 +636,11 @@ _c = LanguageProvider;
 const useLanguage = ()=>{
     _s1();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(1);
-    if ($[0] !== "7d064e873f010c09a4a4fe3b436401213fbbfaa2402d39e396147c892d0ffcd0") {
+    if ($[0] !== "e9df52822e5eab9df9667e57dc6752ce3c500dbb3894db019a0fc9bed83fa072") {
         for(let $i = 0; $i < 1; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "7d064e873f010c09a4a4fe3b436401213fbbfaa2402d39e396147c892d0ffcd0";
+        $[0] = "e9df52822e5eab9df9667e57dc6752ce3c500dbb3894db019a0fc9bed83fa072";
     }
     const context = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContext"])(LanguageContext);
     if (context === undefined) {
@@ -618,12 +678,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 const Navbar = ()=>{
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(90);
-    if ($[0] !== "98747b5863051a217805bbfee67236c912ae71c318876e5e0ab2cf7ac1e622f6") {
-        for(let $i = 0; $i < 90; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(43);
+    if ($[0] !== "6392ad6537a3c2879d9651fa5c82394e641734360d205793505b3bcf7ec19485") {
+        for(let $i = 0; $i < 43; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "98747b5863051a217805bbfee67236c912ae71c318876e5e0ab2cf7ac1e622f6";
+        $[0] = "6392ad6537a3c2879d9651fa5c82394e641734360d205793505b3bcf7ec19485";
     }
     const { t, setLanguage, language } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$src$2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"])();
     const [isScrolled, setIsScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -650,217 +710,163 @@ const Navbar = ()=>{
         t1 = $[2];
     }
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t0, t1);
-    isScrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-white/95 backdrop-blur-sm shadow-sm";
-    const t2 = isScrolled ? "translateY(-100%)" : "translateY(0)";
-    let t3;
-    if ($[3] !== t2) {
-        t3 = {
-            transform: t2
-        };
-        $[3] = t2;
-        $[4] = t3;
-    } else {
-        t3 = $[4];
-    }
+    const t2 = `fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-lg py-2" : "bg-transparent py-4"}`;
+    const t3 = `flex justify-between items-center transition-all duration-300 ${isScrolled ? "h-16" : "h-20"}`;
     let t4;
-    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center gap-2",
+            className: "relative w-12 h-12 transition-transform duration-300 group-hover:scale-110",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                src: "/resources/logo.png",
+                alt: "LGS Logo",
+                fill: true,
+                className: "object-contain drop-shadow-md"
+            }, void 0, false, {
+                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                lineNumber: 49,
+                columnNumber: 102
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+            lineNumber: 49,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[3] = t4;
+    } else {
+        t4 = $[3];
+    }
+    let t5;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "font-display font-bold text-xl sm:text-2xl text-slate-800 tracking-tight leading-none group-hover:text-sky-700 transition-colors duration-300",
+            children: "Learners PU College"
+        }, void 0, false, {
+            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+            lineNumber: 56,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[4] = t5;
+    } else {
+        t5 = $[4];
+    }
+    const t6 = `text-xs font-medium text-sky-600 tracking-widest uppercase transition-opacity duration-300 ${isScrolled ? "opacity-0 h-0 overflow-hidden" : "opacity-100"}`;
+    let t7;
+    if ($[5] !== t6) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex items-center gap-3 group cursor-pointer",
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    src: "/resources/logo.png",
-                    alt: "LGS Logo",
-                    width: 48,
-                    height: 48,
-                    className: "h-12 w-auto object-contain"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                    lineNumber: 59,
-                    columnNumber: 51
-                }, ("TURBOPACK compile-time value", void 0)),
+                t4,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "font-display font-bold text-xl sm:text-2xl text-sky-700 tracking-tight",
-                    children: "Learners PU College"
-                }, void 0, false, {
+                    className: "flex flex-col",
+                    children: [
+                        t5,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: t6,
+                            children: "Excellence in Education"
+                        }, void 0, false, {
+                            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                            lineNumber: 64,
+                            columnNumber: 111
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                    lineNumber: 59,
-                    columnNumber: 163
+                    lineNumber: 64,
+                    columnNumber: 76
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 59,
+            lineNumber: 64,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[5] = t4;
+        $[5] = t6;
+        $[6] = t7;
     } else {
-        t4 = $[5];
-    }
-    let t5;
-    if ($[6] !== t) {
-        t5 = t("nav-home");
-        $[6] = t;
-        $[7] = t5;
-    } else {
-        t5 = $[7];
-    }
-    let t6;
-    if ($[8] !== t5) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: "/",
-            className: "nav-link text-sky-700 font-medium",
-            children: t5
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 74,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        $[8] = t5;
-        $[9] = t6;
-    } else {
-        t6 = $[9];
-    }
-    let t7;
-    if ($[10] !== t) {
-        t7 = t("nav-about");
-        $[10] = t;
-        $[11] = t7;
-    } else {
-        t7 = $[11];
+        t7 = $[6];
     }
     let t8;
-    if ($[12] !== t7) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: "/about",
-            className: "nav-link text-gray-600 hover:text-sky-700 font-medium",
-            children: t7
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 90,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        $[12] = t7;
-        $[13] = t8;
+    if ($[7] !== t) {
+        t8 = [
+            {
+                name: "nav-home",
+                path: "/"
+            },
+            {
+                name: "nav-about",
+                path: "/about"
+            },
+            {
+                name: "nav-courses",
+                path: "/courses"
+            },
+            {
+                name: "nav-life",
+                path: "/life-at-lgs"
+            },
+            {
+                name: "nav-connect",
+                path: "/connect"
+            }
+        ].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                href: item.path,
+                className: "relative px-4 py-2 text-slate-600 font-medium hover:text-sky-700 transition-colors duration-300 group",
+                children: [
+                    t(item.name),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "absolute bottom-0 left-0 w-full h-0.5 bg-sky-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+                    }, void 0, false, {
+                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                        lineNumber: 87,
+                        columnNumber: 187
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, item.name, true, {
+                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                lineNumber: 87,
+                columnNumber: 20
+            }, ("TURBOPACK compile-time value", void 0)));
+        $[7] = t;
+        $[8] = t8;
     } else {
-        t8 = $[13];
+        t8 = $[8];
     }
-    let t9;
-    if ($[14] !== t) {
-        t9 = t("nav-courses");
-        $[14] = t;
-        $[15] = t9;
-    } else {
-        t9 = $[15];
-    }
+    const t9 = language === "en" ? "\uD83C\uDDFA\uD83C\uDDF8" : language === "hi" ? "\uD83C\uDDEE\uD83C\uDDF3" : language === "kn" ? "\uD83C\uDDEE\uD83C\uDDF3" : language === "te" ? "\uD83C\uDDEE\uD83C\uDDF3" : language === "ta" ? "\uD83C\uDDEE\uD83C\uDDF3" : "\uD83C\uDDEE\uD83C\uDDF3";
     let t10;
-    if ($[16] !== t9) {
-        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: "/courses",
-            className: "nav-link text-gray-600 hover:text-sky-700 font-medium",
+    if ($[9] !== t9) {
+        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "text-lg",
             children: t9
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 106,
+            lineNumber: 96,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[16] = t9;
-        $[17] = t10;
+        $[9] = t9;
+        $[10] = t10;
     } else {
-        t10 = $[17];
+        t10 = $[10];
     }
-    let t11;
-    if ($[18] !== t) {
-        t11 = t("nav-life");
-        $[18] = t;
-        $[19] = t11;
-    } else {
-        t11 = $[19];
-    }
+    const t11 = language === "en" ? "EN" : language === "hi" ? "HI" : language === "kn" ? "KN" : language === "te" ? "TE" : language === "ta" ? "TA" : "ML";
     let t12;
-    if ($[20] !== t11) {
-        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: "/life-at-lgs",
-            className: "nav-link text-gray-600 hover:text-sky-700 font-medium",
+    if ($[11] !== t11) {
+        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "font-semibold text-sm",
             children: t11
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 122,
+            lineNumber: 105,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[20] = t11;
-        $[21] = t12;
+        $[11] = t11;
+        $[12] = t12;
     } else {
-        t12 = $[21];
+        t12 = $[12];
     }
     let t13;
-    if ($[22] !== t) {
-        t13 = t("nav-connect");
-        $[22] = t;
-        $[23] = t13;
-    } else {
-        t13 = $[23];
-    }
-    let t14;
-    if ($[24] !== t13) {
-        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: "/connect",
-            className: "nav-link text-gray-600 hover:text-sky-700 font-medium",
-            children: t13
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 138,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[24] = t13;
-        $[25] = t14;
-    } else {
-        t14 = $[25];
-    }
-    let t15;
-    if ($[26] === Symbol.for("react.memo_cache_sentinel")) {
-        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-            className: "w-5 h-5",
-            fill: "none",
-            stroke: "currentColor",
-            viewBox: "0 0 24 24",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                strokeLinecap: "round",
-                strokeLinejoin: "round",
-                strokeWidth: "2",
-                d: "M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
-            }, void 0, false, {
-                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                lineNumber: 146,
-                columnNumber: 90
-            }, ("TURBOPACK compile-time value", void 0))
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 146,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[26] = t15;
-    } else {
-        t15 = $[26];
-    }
-    const t16 = language === "en" ? "En" : language === "hi" ? "Hi" : language === "kn" ? "Kn" : language === "te" ? "Te" : language === "ta" ? "Ta" : "Ml";
-    let t17;
-    if ($[27] !== t16) {
-        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            children: t16
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 154,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[27] = t16;
-        $[28] = t17;
-    } else {
-        t17 = $[28];
-    }
-    let t18;
-    if ($[29] === Symbol.for("react.memo_cache_sentinel")) {
-        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-            className: "w-4 h-4",
+    if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            className: "w-4 h-4 transition-transform duration-300 group-hover:rotate-180",
             fill: "none",
             stroke: "currentColor",
             viewBox: "0 0 24 24",
@@ -871,461 +877,321 @@ const Navbar = ()=>{
                 d: "M19 9l-7 7-7-7"
             }, void 0, false, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                lineNumber: 162,
-                columnNumber: 90
+                lineNumber: 113,
+                columnNumber: 147
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 162,
+            lineNumber: 113,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[29] = t18;
+        $[13] = t13;
     } else {
-        t18 = $[29];
+        t13 = $[13];
     }
-    let t19;
-    if ($[30] !== t17) {
-        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            className: "flex items-center space-x-1 text-gray-600 hover:text-sky-700 font-medium focus:outline-none",
+    let t14;
+    if ($[14] !== t10 || $[15] !== t12) {
+        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            className: "flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 hover:bg-sky-50 text-slate-700 hover:text-sky-700 transition-all duration-300 border border-slate-200 hover:border-sky-200 shadow-sm hover:shadow-md",
             children: [
-                t15,
-                t17,
-                t18
+                t10,
+                t12,
+                t13
+            ]
+        }, void 0, true, {
+            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+            lineNumber: 120,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[14] = t10;
+        $[15] = t12;
+        $[16] = t14;
+    } else {
+        t14 = $[16];
+    }
+    let t15;
+    if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
+        t15 = [
+            {
+                code: "en",
+                label: "English",
+                flag: "\uD83C\uDDFA\uD83C\uDDF8"
+            },
+            {
+                code: "hi",
+                label: "\u0939\u093F\u0928\u094D\u0926\u0940",
+                flag: "\uD83C\uDDEE\uD83C\uDDF3"
+            },
+            {
+                code: "kn",
+                label: "\u0C95\u0CA8\u0CCD\u0CA8\u0CA1",
+                flag: "\uD83C\uDDEE\uD83C\uDDF3"
+            },
+            {
+                code: "te",
+                label: "\u0C24\u0C46\u0C32\u0C41\u0C17\u0C41",
+                flag: "\uD83C\uDDEE\uD83C\uDDF3"
+            },
+            {
+                code: "ta",
+                label: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD",
+                flag: "\uD83C\uDDEE\uD83C\uDDF3"
+            },
+            {
+                code: "ml",
+                label: "\u0D2E\u0D32\u0D2F\u0D3E\u0D33\u0D02",
+                flag: "\uD83C\uDDEE\uD83C\uDDF3"
+            }
+        ];
+        $[17] = t15;
+    } else {
+        t15 = $[17];
+    }
+    let t16;
+    if ($[18] !== language || $[19] !== setLanguage) {
+        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "absolute right-0 mt-2 w-48 bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right z-50 border border-slate-100 overflow-hidden ring-1 ring-black/5",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "p-1",
+                children: t15.map((lang)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: ()=>setLanguage(lang.code),
+                        className: `flex items-center gap-3 w-full text-left px-4 py-2.5 text-sm rounded-xl transition-colors duration-200 ${language === lang.code ? "bg-sky-50 text-sky-700 font-semibold" : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"}`,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-lg",
+                                children: lang.flag
+                            }, void 0, false, {
+                                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                                lineNumber: 160,
+                                columnNumber: 620
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            lang.label
+                        ]
+                    }, lang.code, true, {
+                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                        lineNumber: 160,
+                        columnNumber: 308
+                    }, ("TURBOPACK compile-time value", void 0)))
+            }, void 0, false, {
+                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                lineNumber: 160,
+                columnNumber: 270
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+            lineNumber: 160,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[18] = language;
+        $[19] = setLanguage;
+        $[20] = t16;
+    } else {
+        t16 = $[20];
+    }
+    let t17;
+    if ($[21] !== t14 || $[22] !== t16) {
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "relative group ml-4",
+            children: [
+                t14,
+                t16
             ]
         }, void 0, true, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
             lineNumber: 169,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[30] = t17;
-        $[31] = t19;
+        $[21] = t14;
+        $[22] = t16;
+        $[23] = t17;
     } else {
-        t19 = $[31];
+        t17 = $[23];
     }
-    let t20;
-    if ($[32] !== setLanguage) {
-        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right z-50 border border-gray-100",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "py-1",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setLanguage("en"),
-                        className: "block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700",
-                        children: "🇺🇸 English"
-                    }, void 0, false, {
-                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                        lineNumber: 177,
-                        columnNumber: 254
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setLanguage("hi"),
-                        className: "block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700",
-                        children: "🇮🇳 हिन्दी"
-                    }, void 0, false, {
-                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                        lineNumber: 177,
-                        columnNumber: 420
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setLanguage("kn"),
-                        className: "block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700",
-                        children: "🇮🇳 ಕನ್ನಡ"
-                    }, void 0, false, {
-                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                        lineNumber: 177,
-                        columnNumber: 585
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setLanguage("te"),
-                        className: "block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700",
-                        children: "🇮🇳 తెలుగు"
-                    }, void 0, false, {
-                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                        lineNumber: 177,
-                        columnNumber: 749
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setLanguage("ta"),
-                        className: "block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700",
-                        children: "🇮🇳 தமிழ்"
-                    }, void 0, false, {
-                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                        lineNumber: 177,
-                        columnNumber: 914
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setLanguage("ml"),
-                        className: "block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-sky-700",
-                        children: "🇮🇳 മലയാളം"
-                    }, void 0, false, {
-                        fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                        lineNumber: 177,
-                        columnNumber: 1078
-                    }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
+    let t18;
+    if ($[24] !== t17 || $[25] !== t8) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "hidden md:flex items-center gap-1",
+            children: [
+                t8,
+                t17
+            ]
+        }, void 0, true, {
+            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+            lineNumber: 178,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[24] = t17;
+        $[25] = t8;
+        $[26] = t18;
+    } else {
+        t18 = $[26];
+    }
+    let t19;
+    if ($[27] !== isMobileMenuOpen) {
+        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            className: "md:hidden p-2 text-slate-600 hover:text-sky-700 transition-colors",
+            onClick: ()=>setIsMobileMenuOpen(!isMobileMenuOpen),
+            children: isMobileMenuOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                className: "w-7 h-7",
+                fill: "none",
+                stroke: "currentColor",
+                viewBox: "0 0 24 24",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    strokeWidth: "2",
+                    d: "M6 18L18 6M6 6l12 12"
+                }, void 0, false, {
+                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                    lineNumber: 187,
+                    columnNumber: 251
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
                 fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                lineNumber: 177,
-                columnNumber: 232
+                lineNumber: 187,
+                columnNumber: 172
+            }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                className: "w-7 h-7",
+                fill: "none",
+                stroke: "currentColor",
+                viewBox: "0 0 24 24",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    strokeWidth: "2",
+                    d: "M4 6h16M4 12h16M4 18h16"
+                }, void 0, false, {
+                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                    lineNumber: 187,
+                    columnNumber: 433
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
+                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                lineNumber: 187,
+                columnNumber: 354
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 177,
+            lineNumber: 187,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[32] = setLanguage;
+        $[27] = isMobileMenuOpen;
+        $[28] = t19;
+    } else {
+        t19 = $[28];
+    }
+    let t20;
+    if ($[29] !== t18 || $[30] !== t19 || $[31] !== t3 || $[32] !== t7) {
+        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: t3,
+                children: [
+                    t7,
+                    t18,
+                    t19
+                ]
+            }, void 0, true, {
+                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                lineNumber: 195,
+                columnNumber: 67
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+            lineNumber: 195,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0));
+        $[29] = t18;
+        $[30] = t19;
+        $[31] = t3;
+        $[32] = t7;
         $[33] = t20;
     } else {
         t20 = $[33];
     }
-    let t21;
-    if ($[34] !== t19 || $[35] !== t20) {
-        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "relative group",
-            children: [
-                t19,
-                t20
-            ]
-        }, void 0, true, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 185,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[34] = t19;
-        $[35] = t20;
-        $[36] = t21;
-    } else {
-        t21 = $[36];
-    }
+    const t21 = `md:hidden fixed inset-x-0 top-[80px] bg-white/95 backdrop-blur-xl shadow-2xl z-40 transition-all duration-500 ease-in-out origin-top ${isMobileMenuOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"}`;
     let t22;
-    if ($[37] !== t10 || $[38] !== t12 || $[39] !== t14 || $[40] !== t21 || $[41] !== t6 || $[42] !== t8) {
+    if ($[34] !== t) {
         t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "hidden md:flex space-x-8 items-center",
+            className: "px-6 py-8 space-y-4",
             children: [
-                t6,
-                t8,
-                t10,
-                t12,
-                t14,
-                t21
-            ]
-        }, void 0, true, {
+                {
+                    name: "nav-home",
+                    path: "/"
+                },
+                {
+                    name: "nav-about",
+                    path: "/about"
+                },
+                {
+                    name: "nav-courses",
+                    path: "/courses"
+                },
+                {
+                    name: "nav-life",
+                    path: "/life-at-lgs"
+                },
+                {
+                    name: "nav-connect",
+                    path: "/connect"
+                }
+            ].map((item_0)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: item_0.path,
+                    className: "block text-lg font-medium text-slate-600 hover:text-sky-700 hover:bg-sky-50 px-4 py-3 rounded-xl transition-all duration-300",
+                    onClick: ()=>setIsMobileMenuOpen(false),
+                    children: t(item_0.name)
+                }, item_0.name, false, {
+                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
+                    lineNumber: 222,
+                    columnNumber: 24
+                }, ("TURBOPACK compile-time value", void 0)))
+        }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 194,
+            lineNumber: 207,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[37] = t10;
-        $[38] = t12;
-        $[39] = t14;
-        $[40] = t21;
-        $[41] = t6;
-        $[42] = t8;
-        $[43] = t22;
+        $[34] = t;
+        $[35] = t22;
     } else {
-        t22 = $[43];
+        t22 = $[35];
     }
     let t23;
-    if ($[44] !== isMobileMenuOpen) {
-        t23 = ()=>setIsMobileMenuOpen(!isMobileMenuOpen);
-        $[44] = isMobileMenuOpen;
-        $[45] = t23;
-    } else {
-        t23 = $[45];
-    }
-    let t24;
-    if ($[46] === Symbol.for("react.memo_cache_sentinel")) {
-        t24 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-            className: "w-6 h-6",
-            fill: "none",
-            stroke: "currentColor",
-            viewBox: "0 0 24 24",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                strokeLinecap: "round",
-                strokeLinejoin: "round",
-                strokeWidth: "2",
-                d: "M4 6h16M4 12h16M4 18h16"
-            }, void 0, false, {
-                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                lineNumber: 215,
-                columnNumber: 90
-            }, ("TURBOPACK compile-time value", void 0))
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 215,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[46] = t24;
-    } else {
-        t24 = $[46];
-    }
-    let t25;
-    if ($[47] !== t23) {
-        t25 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            className: "md:hidden p-2 text-sky-700",
-            onClick: t23,
-            children: t24
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 222,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[47] = t23;
-        $[48] = t25;
-    } else {
-        t25 = $[48];
-    }
-    let t26;
-    if ($[49] !== t22 || $[50] !== t25) {
-        t26 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex justify-between items-center h-16",
-                children: [
-                    t4,
-                    t22,
-                    t25
-                ]
-            }, void 0, true, {
-                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-                lineNumber: 230,
-                columnNumber: 67
-            }, ("TURBOPACK compile-time value", void 0))
+    if ($[36] !== t21 || $[37] !== t22) {
+        t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: t21,
+            children: t22
         }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
             lineNumber: 230,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[49] = t22;
-        $[50] = t25;
-        $[51] = t26;
+        $[36] = t21;
+        $[37] = t22;
+        $[38] = t23;
     } else {
-        t26 = $[51];
+        t23 = $[38];
     }
-    const t27 = `md:hidden fixed top-16 left-0 w-full bg-white shadow-lg z-40 transform transition-transform duration-300 ${isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"}`;
-    let t28;
-    if ($[52] === Symbol.for("react.memo_cache_sentinel")) {
-        t28 = ()=>setIsMobileMenuOpen(false);
-        $[52] = t28;
-    } else {
-        t28 = $[52];
-    }
-    let t29;
-    if ($[53] !== t) {
-        t29 = t("nav-home");
-        $[53] = t;
-        $[54] = t29;
-    } else {
-        t29 = $[54];
-    }
-    let t30;
-    if ($[55] !== t29) {
-        t30 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: "/",
-            className: "block text-blue-900 font-medium",
-            onClick: t28,
-            children: t29
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 255,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[55] = t29;
-        $[56] = t30;
-    } else {
-        t30 = $[56];
-    }
-    let t31;
-    if ($[57] === Symbol.for("react.memo_cache_sentinel")) {
-        t31 = ()=>setIsMobileMenuOpen(false);
-        $[57] = t31;
-    } else {
-        t31 = $[57];
-    }
-    let t32;
-    if ($[58] !== t) {
-        t32 = t("nav-about");
-        $[58] = t;
-        $[59] = t32;
-    } else {
-        t32 = $[59];
-    }
-    let t33;
-    if ($[60] !== t32) {
-        t33 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: "/about",
-            className: "block text-gray-700 hover:text-blue-900 font-medium",
-            onClick: t31,
-            children: t32
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 278,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[60] = t32;
-        $[61] = t33;
-    } else {
-        t33 = $[61];
-    }
-    let t34;
-    if ($[62] === Symbol.for("react.memo_cache_sentinel")) {
-        t34 = ()=>setIsMobileMenuOpen(false);
-        $[62] = t34;
-    } else {
-        t34 = $[62];
-    }
-    let t35;
-    if ($[63] !== t) {
-        t35 = t("nav-courses");
-        $[63] = t;
-        $[64] = t35;
-    } else {
-        t35 = $[64];
-    }
-    let t36;
-    if ($[65] !== t35) {
-        t36 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: "/courses",
-            className: "block text-gray-700 hover:text-blue-900 font-medium",
-            onClick: t34,
-            children: t35
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 301,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[65] = t35;
-        $[66] = t36;
-    } else {
-        t36 = $[66];
-    }
-    let t37;
-    if ($[67] === Symbol.for("react.memo_cache_sentinel")) {
-        t37 = ()=>setIsMobileMenuOpen(false);
-        $[67] = t37;
-    } else {
-        t37 = $[67];
-    }
-    let t38;
-    if ($[68] !== t) {
-        t38 = t("nav-life");
-        $[68] = t;
-        $[69] = t38;
-    } else {
-        t38 = $[69];
-    }
-    let t39;
-    if ($[70] !== t38) {
-        t39 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: "/life-at-lgs",
-            className: "block text-gray-700 hover:text-blue-900 font-medium",
-            onClick: t37,
-            children: t38
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 324,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[70] = t38;
-        $[71] = t39;
-    } else {
-        t39 = $[71];
-    }
-    let t40;
-    if ($[72] === Symbol.for("react.memo_cache_sentinel")) {
-        t40 = ()=>setIsMobileMenuOpen(false);
-        $[72] = t40;
-    } else {
-        t40 = $[72];
-    }
-    let t41;
-    if ($[73] !== t) {
-        t41 = t("nav-connect");
-        $[73] = t;
-        $[74] = t41;
-    } else {
-        t41 = $[74];
-    }
-    let t42;
-    if ($[75] !== t41) {
-        t42 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            href: "/connect",
-            className: "block text-gray-700 hover:text-blue-900 font-medium",
-            onClick: t40,
-            children: t41
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 347,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[75] = t41;
-        $[76] = t42;
-    } else {
-        t42 = $[76];
-    }
-    let t43;
-    if ($[77] !== t30 || $[78] !== t33 || $[79] !== t36 || $[80] !== t39 || $[81] !== t42) {
-        t43 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "px-4 py-6 space-y-4",
+    let t24;
+    if ($[39] !== t2 || $[40] !== t20 || $[41] !== t23) {
+        t24 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+            className: t2,
             children: [
-                t30,
-                t33,
-                t36,
-                t39,
-                t42
+                t20,
+                t23
             ]
         }, void 0, true, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 355,
+            lineNumber: 239,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0));
-        $[77] = t30;
-        $[78] = t33;
-        $[79] = t36;
-        $[80] = t39;
-        $[81] = t42;
-        $[82] = t43;
+        $[39] = t2;
+        $[40] = t20;
+        $[41] = t23;
+        $[42] = t24;
     } else {
-        t43 = $[82];
+        t24 = $[42];
     }
-    let t44;
-    if ($[83] !== t27 || $[84] !== t43) {
-        t44 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: t27,
-            children: t43
-        }, void 0, false, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 367,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[83] = t27;
-        $[84] = t43;
-        $[85] = t44;
-    } else {
-        t44 = $[85];
-    }
-    let t45;
-    if ($[86] !== t26 || $[87] !== t3 || $[88] !== t44) {
-        t45 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-            className: "fixed top-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-sm",
-            style: t3,
-            children: [
-                t26,
-                t44
-            ]
-        }, void 0, true, {
-            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/Navbar.tsx",
-            lineNumber: 376,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[86] = t26;
-        $[87] = t3;
-        $[88] = t44;
-        $[89] = t45;
-    } else {
-        t45 = $[89];
-    }
-    return t45;
+    return t24;
 };
 _s(Navbar, "e1S8Jz/YOES5UcOEnTfJ5zy22cY=", false, function() {
     return [
@@ -1967,11 +1833,11 @@ var _s = __turbopack_context__.k.signature();
 const FloatingContact = ()=>{
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(22);
-    if ($[0] !== "1e8be00c0f7d2049bee3620071e0ae2bc1cfe7b8d04d3a0fc30a36f4625f04ef") {
+    if ($[0] !== "ee90fd7dd833609df3b57b9a5bf0a4adc5020afa1cf2ef45d2e15886aec6ea9f") {
         for(let $i = 0; $i < 22; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1e8be00c0f7d2049bee3620071e0ae2bc1cfe7b8d04d3a0fc30a36f4625f04ef";
+        $[0] = "ee90fd7dd833609df3b57b9a5bf0a4adc5020afa1cf2ef45d2e15886aec6ea9f";
     }
     const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
@@ -2007,41 +1873,31 @@ const FloatingContact = ()=>{
             href: "https://wa.me/15551234567",
             target: "_blank",
             rel: "noopener noreferrer",
-            className: "group flex items-center gap-3 p-2 pr-4 rounded-full bg-white/90 backdrop-blur-md shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-white/50",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-green-500 to-emerald-400 text-white shadow-md group-hover:rotate-12 transition-transform duration-300",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                        className: "w-5 h-5",
-                        fill: "currentColor",
-                        viewBox: "0 0 24 24",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                            d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
-                        }, void 0, false, {
-                            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
-                            lineNumber: 36,
-                            columnNumber: 537
-                        }, ("TURBOPACK compile-time value", void 0))
+            className: "group flex items-center justify-center p-2 rounded-full bg-white/90 backdrop-blur-md shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-white/50",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-green-500 to-emerald-400 text-white shadow-md group-hover:rotate-12 transition-transform duration-300",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                    className: "w-5 h-5",
+                    fill: "currentColor",
+                    viewBox: "0 0 24 24",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
                     }, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
                         lineNumber: 36,
-                        columnNumber: 472
+                        columnNumber: 541
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
                     lineNumber: 36,
-                    columnNumber: 274
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-gray-700 font-semibold text-sm",
-                    children: "WhatsApp"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
-                    lineNumber: 36,
-                    columnNumber: 1666
+                    columnNumber: 476
                 }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
+            }, void 0, false, {
+                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
+                lineNumber: 36,
+                columnNumber: 278
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
             lineNumber: 36,
             columnNumber: 10
@@ -2054,45 +1910,35 @@ const FloatingContact = ()=>{
     if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
             href: "mailto:info@lgs.edu",
-            className: "group flex items-center gap-3 p-2 pr-4 rounded-full bg-white/90 backdrop-blur-md shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-white/50",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-red-500 to-pink-500 text-white shadow-md group-hover:rotate-12 transition-transform duration-300",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                        className: "w-5 h-5",
-                        fill: "none",
-                        stroke: "currentColor",
-                        viewBox: "0 0 24 24",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                            strokeLinecap: "round",
-                            strokeLinejoin: "round",
-                            strokeWidth: "2",
-                            d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        }, void 0, false, {
-                            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
-                            lineNumber: 43,
-                            columnNumber: 498
-                        }, ("TURBOPACK compile-time value", void 0))
+            className: "group flex items-center justify-center p-2 rounded-full bg-white/90 backdrop-blur-md shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-white/50",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-red-500 to-pink-500 text-white shadow-md group-hover:rotate-12 transition-transform duration-300",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                    className: "w-5 h-5",
+                    fill: "none",
+                    stroke: "currentColor",
+                    viewBox: "0 0 24 24",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        strokeLinecap: "round",
+                        strokeLinejoin: "round",
+                        strokeWidth: "2",
+                        d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     }, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
                         lineNumber: 43,
-                        columnNumber: 419
+                        columnNumber: 502
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
                     lineNumber: 43,
-                    columnNumber: 226
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-gray-700 font-semibold text-sm",
-                    children: "Email Us"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
-                    lineNumber: 43,
-                    columnNumber: 684
+                    columnNumber: 423
                 }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
+            }, void 0, false, {
+                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
+                lineNumber: 43,
+                columnNumber: 230
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
             lineNumber: 43,
             columnNumber: 10
@@ -2105,45 +1951,35 @@ const FloatingContact = ()=>{
     if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
             href: "tel:+15551234567",
-            className: "group flex items-center gap-3 p-2 pr-4 rounded-full bg-white/90 backdrop-blur-md shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-white/50",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 text-white shadow-md group-hover:rotate-12 transition-transform duration-300",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                        className: "w-5 h-5",
-                        fill: "none",
-                        stroke: "currentColor",
-                        viewBox: "0 0 24 24",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                            strokeLinecap: "round",
-                            strokeLinejoin: "round",
-                            strokeWidth: "2",
-                            d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                        }, void 0, false, {
-                            fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
-                            lineNumber: 50,
-                            columnNumber: 496
-                        }, ("TURBOPACK compile-time value", void 0))
+            className: "group flex items-center justify-center p-2 rounded-full bg-white/90 backdrop-blur-md shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-white/50",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 text-white shadow-md group-hover:rotate-12 transition-transform duration-300",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                    className: "w-5 h-5",
+                    fill: "none",
+                    stroke: "currentColor",
+                    viewBox: "0 0 24 24",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        strokeLinecap: "round",
+                        strokeLinejoin: "round",
+                        strokeWidth: "2",
+                        d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     }, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
                         lineNumber: 50,
-                        columnNumber: 417
+                        columnNumber: 500
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
                     lineNumber: 50,
-                    columnNumber: 223
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$lgs$2f$Learners_PU_College$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-gray-700 font-semibold text-sm",
-                    children: "Call Now"
-                }, void 0, false, {
-                    fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
-                    lineNumber: 50,
-                    columnNumber: 795
+                    columnNumber: 421
                 }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
+            }, void 0, false, {
+                fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
+                lineNumber: 50,
+                columnNumber: 227
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
             fileName: "[project]/OneDrive/Desktop/lgs/Learners_PU_College/src/components/FloatingContact.tsx",
             lineNumber: 50,
             columnNumber: 10
