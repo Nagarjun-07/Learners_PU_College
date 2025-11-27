@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses & Admissions - LGS Learning Gateway School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #f97316;
+            --accent: #3b82f6;
+            --neutral: #6b7280;
+            --bg: #ffffff;
+        }
+        
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'Source Code Pro', monospace; }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .course-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .course-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-indicator {
+            position: relative;
+        }
+        
+        .step-indicator::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -50%;
+            width: 100%;
+            height: 2px;
+            background: #e5e7eb;
+            z-index: -1;
+        }
+        
+        .step-indicator.active::after {
+            background: var(--secondary);
+        }
+        
+        .scholarship-card {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(249, 115, 22, 0.1));
+            transition: all 0.3s ease;
+        }
+        
+        .scholarship-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-body bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="font-display font-bold text-2xl text-blue-900">LGS</div>
+                    <div class="ml-2 text-sm text-gray-600">Learning Gateway School</div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium">About Us</a>
+                    <a href="courses.html" class="nav-link text-blue-900 font-medium">Courses</a>
+                    <a href="life-at-lgs.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium">Life at LGS</a>
+                    <a href="connect.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium">Connect</a>
+                </div>
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-blue-50 to-blue-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="font-display text-5xl font-bold text-blue-900 mb-6">Courses & Admissions</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Explore our comprehensive range of courses designed to excel in competitive examinations 
+                    and build strong foundations for your academic journey.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Math Foundation Course -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-blue-900 mb-4">Math Foundation Course</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Build a strong mathematical foundation essential for all competitive examinations and advanced studies.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="resources/iit-jee-study.jpg" alt="Math Foundation Course" class="rounded-2xl shadow-2xl w-full h-96 object-cover">
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-blue-50 p-6 rounded-2xl">
+                        <h3 class="font-display text-2xl font-semibold text-blue-900 mb-4">Course Highlights</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Comprehensive coverage of mathematical concepts</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Problem-solving techniques and shortcuts</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Regular assessments and progress tracking</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Individual attention and doubt clearing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-blue-900">6 Months</div>
+                            <div class="text-sm text-gray-600">Duration</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-blue-900">₹45,000</div>
+                            <div class="text-sm text-gray-600">Course Fee</div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="openAdmissionForm('math-foundation')" class="w-full bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300">
+                        Apply Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Catalog -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-blue-900 mb-4">Complete Course Catalog</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Choose from our comprehensive range of courses designed for various competitive examinations.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- NEET Course -->
+                <div class="course-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="mb-4">
+                        <img src="resources/neet-prep.jpg" alt="NEET Course" class="w-full h-48 object-cover rounded-lg">
+                        <div class="mt-4 flex items-center justify-between">
+                            <h3 class="font-display text-xl font-semibold text-blue-900">NEET Preparation</h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Medical</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <p class="text-gray-600 text-sm">Comprehensive preparation for medical entrance examinations with expert faculty and advanced lab facilities.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <span class="text-gray-500">Duration:</span>
+                                <span class="font-medium text-gray-700">2 Years</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500">Success Rate:</span>
+                                <span class="font-medium text-orange-500">92%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-t pt-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-900">₹1,50,000</span>
+                                <button onclick="openAdmissionForm('neet')" class="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-orange-600 transition-colors">
+                                    Apply Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IIT-JEE Course -->
+                <div class="course-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="mb-4">
+                        <img src="resources/iit-jee-study.jpg" alt="IIT-JEE Course" class="w-full h-48 object-cover rounded-lg">
+                        <div class="mt-4 flex items-center justify-between">
+                            <h3 class="font-display text-xl font-semibold text-blue-900">IIT-JEE Preparation</h3>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Engineering</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <p class="text-gray-600 text-sm">Rigorous training for engineering entrance exams with focus on problem-solving and analytical skills.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <span class="text-gray-500">Duration:</span>
+                                <span class="font-medium text-gray-700">2 Years</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500">Success Rate:</span>
+                                <span class="font-medium text-orange-500">89%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-t pt-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-900">₹1,75,000</span>
+                                <button onclick="openAdmissionForm('iit-jee')" class="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-orange-600 transition-colors">
+                                    Apply Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CET Course -->
+                <div class="course-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="mb-4">
+                        <img src="resources/sat-classroom.jpg" alt="CET Course" class="w-full h-48 object-cover rounded-lg">
+                        <div class="mt-4 flex items-center justify-between">
+                            <h3 class="font-display text-xl font-semibold text-blue-900">CET Preparation</h3>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">State Level</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <p class="text-gray-600 text-sm">Specialized coaching for Common Entrance Test with state-specific curriculum and pattern.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <span class="text-gray-500">Duration:</span>
+                                <span class="font-medium text-gray-700">1-2 Years</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500">Success Rate:</span>
+                                <span class="font-medium text-orange-500">94%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-t pt-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-900">₹1,25,000</span>
+                                <button onclick="openAdmissionForm('cet')" class="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-orange-600 transition-colors">
+                                    Apply Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SAT Course -->
+                <div class="course-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="mb-4">
+                        <img src="resources/sat-classroom.jpg" alt="SAT Course" class="w-full h-48 object-cover rounded-lg">
+                        <div class="mt-4 flex items-center justify-between">
+                            <h3 class="font-display text-xl font-semibold text-blue-900">SAT Preparation</h3>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">International</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <p class="text-gray-600 text-sm">Global standard test preparation for undergraduate admissions in international universities.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <span class="text-gray-500">Duration:</span>
+                                <span class="font-medium text-gray-700">6-12 Months</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500">Success Rate:</span>
+                                <span class="font-medium text-orange-500">96%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-t pt-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-900">₹80,000</span>
+                                <button onclick="openAdmissionForm('sat')" class="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-orange-600 transition-colors">
+                                    Apply Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foundation Course -->
+                <div class="course-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="mb-4">
+                        <img src="resources/science-lab.jpg" alt="Foundation Course" class="w-full h-48 object-cover rounded-lg">
+                        <div class="mt-4 flex items-center justify-between">
+                            <h3 class="font-display text-xl font-semibold text-blue-900">Foundation Course</h3>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Class 8-10</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <p class="text-gray-600 text-sm">Early preparation program for students from classes 8-10 to build strong conceptual foundations.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <span class="text-gray-500">Duration:</span>
+                                <span class="font-medium text-gray-700">1-3 Years</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500">Success Rate:</span>
+                                <span class="font-medium text-orange-500">98%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-t pt-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-900">₹95,000</span>
+                                <button onclick="openAdmissionForm('foundation')" class="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-orange-600 transition-colors">
+                                    Apply Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crash Course -->
+                <div class="course-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="mb-4">
+                        <img src="resources/library-students.jpg" alt="Crash Course" class="w-full h-48 object-cover rounded-lg">
+                        <div class="mt-4 flex items-center justify-between">
+                            <h3 class="font-display text-xl font-semibold text-blue-900">Crash Course</h3>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Intensive</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <p class="text-gray-600 text-sm">Intensive revision program for last-minute preparation and quick concept review.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <span class="text-gray-500">Duration:</span>
+                                <span class="font-medium text-gray-700">3 Months</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500">Success Rate:</span>
+                                <span class="font-medium text-orange-500">85%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-t pt-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-900">₹35,000</span>
+                                <button onclick="openAdmissionForm('crash')" class="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-orange-600 transition-colors">
+                                    Apply Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-blue-900 mb-4">Admission Process</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Simple and transparent admission process to help you get started on your academic journey.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="step-indicator bg-orange-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                        1
+                    </div>
+                    <h3 class="font-display text-lg font-semibold text-blue-900 mb-2">Online Application</h3>
+                    <p class="text-gray-600 text-sm">Fill out the online application form with basic details and course preferences.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="step-indicator bg-orange-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                        2
+                    </div>
+                    <h3 class="font-display text-lg font-semibold text-blue-900 mb-2">Entrance Test</h3>
+                    <p class="text-gray-600 text-sm">Appear for our aptitude test to assess your current knowledge and learning potential.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="step-indicator bg-orange-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                        3
+                    </div>
+                    <h3 class="font-display text-lg font-semibold text-blue-900 mb-2">Counseling</h3>
+                    <p class="text-gray-600 text-sm">Personal counseling session to discuss course selection and career goals.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="step-indicator bg-orange-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                        4
+                    </div>
+                    <h3 class="font-display text-lg font-semibold text-blue-900 mb-2">Admission</h3>
+                    <p class="text-gray-600 text-sm">Complete the admission formalities and begin your journey with us.</p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-2xl p-8">
+                <h3 class="font-display text-2xl font-semibold text-blue-900 mb-6 text-center">Eligibility Criteria</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-lg text-blue-900 mb-3">Academic Requirements</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Minimum 60% in previous examination</li>
+                            <li>• Science stream (Physics, Chemistry, Mathematics/Biology)</li>
+                            <li>• Valid transfer certificate from previous institution</li>
+                            <li>• Age limit: 14-18 years for regular courses</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg text-blue-900 mb-3">Required Documents</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Birth certificate or Aadhar card</li>
+                            <li>• Previous academic mark sheets</li>
+                            <li>• Passport size photographs (4 copies)</li>
+                            <li>• Parent/guardian ID proof</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules and Regulations -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-blue-900 mb-4">Rules & Regulations</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Clear guidelines to ensure a productive and disciplined learning environment for all students.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-semibold text-lg text-blue-900 mb-3">Attendance Policy</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Minimum 85% attendance required</li>
+                                <li>• Leave application must be submitted in advance</li>
+                                <li>• Medical leave requires proper documentation</li>
+                                <li>• Regular attendance monitoring and reporting</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-semibold text-lg text-blue-900 mb-3">Academic Integrity</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Zero tolerance for plagiarism and cheating</li>
+                                <li>• Original work submission mandatory</li>
+                                <li>• Fair assessment practices</li>
+                                <li>• Ethical conduct in all examinations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-semibold text-lg text-blue-900 mb-3">Code of Conduct</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Respectful behavior towards faculty and peers</li>
+                                <li>• Proper uniform and dress code</li>
+                                <li>• No use of mobile phones during classes</li>
+                                <li>• Maintain discipline in school premises</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-semibold text-lg text-blue-900 mb-3">Fee Regulations</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Fee payment within due dates</li>
+                                <li>• Late payment charges applicable</li>
+                                <li>• Refund policy as per institution norms</li>
+                                <li>• Installment options available for eligible students</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-6 bg-blue-50 rounded-lg">
+                    <h3 class="font-semibold text-lg text-blue-900 mb-3">Disciplinary Actions</h3>
+                    <p class="text-gray-600 mb-3">
+                        Any violation of school rules and regulations may result in disciplinary action including warning, 
+                        suspension, or expulsion depending on the severity of the offense. Parents will be notified 
+                        immediately in case of any serious disciplinary issues.
+                    </p>
+                    <p class="text-gray-600">
+                        The school reserves the right to modify rules and regulations as necessary for the smooth 
+                        functioning of the institution and the welfare of all students.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarship Programs -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-blue-900 mb-4">Scholarship Programs</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Merit-based and need-based scholarships to support deserving students in their academic journey.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Merit Scholarship -->
+                <div class="scholarship-card rounded-2xl p-6">
+                    <div class="text-center mb-4">
+                        <div class="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold text-blue-900 mb-2">Merit Scholarship</h3>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <p class="text-gray-600 text-sm">Awarded to students with exceptional academic performance and competitive exam scores.</p>
+                        
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600 text-sm">Scholarship:</span>
+                                <span class="font-semibold text-orange-500">50-100%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600 text-sm">Eligibility:</span>
+                                <span class="font-semibold text-gray-700">95%+ Marks</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-3 border-t">
+                            <ul class="text-xs text-gray-600 space-y-1">
+                                <li>• Based on entrance test performance</li>
+                                <li>• Academic record consideration</li>
+                                <li>• Personal interview assessment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Need-Based Scholarship -->
+                <div class="scholarship-card rounded-2xl p-6">
+                    <div class="text-center mb-4">
+                        <div class="bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold text-blue-900 mb-2">Need-Based Scholarship</h3>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <p class="text-gray-600 text-sm">Financial assistance for deserving students from economically weaker backgrounds.</p>
+                        
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600 text-sm">Scholarship:</span>
+                                <span class="font-semibold text-orange-500">25-75%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600 text-sm">Eligibility:</span>
+                                <span class="font-semibold text-gray-700">Income < ₹5L</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-3 border-t">
+                            <ul class="text-xs text-gray-600 space-y-1">
+                                <li>• Family income verification</li>
+                                <li>• Academic performance review</li>
+                                <li>• Personal circumstances assessment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports Scholarship -->
+                <div class="scholarship-card rounded-2xl p-6">
+                    <div class="text-center mb-4">
+                        <div class="bg-orange-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold text-blue-900 mb-2">Sports Scholarship</h3>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <p class="text-gray-600 text-sm">Recognition and support for students with exceptional athletic achievements and potential.</p>
+                        
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600 text-sm">Scholarship:</span>
+                                <span class="font-semibold text-orange-500">30-60%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600 text-sm">Eligibility:</span>
+                                <span class="font-semibold text-gray-700">State/National Level</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-3 border-t">
+                            <ul class="text-xs text-gray-600 space-y-1">
+                                <li>• Sports achievement certificates</li>
+                                <li>• Physical fitness assessment</li>
+                                <li>• Academic performance review</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="bg-blue-50 rounded-2xl p-8 max-w-4xl mx-auto">
+                    <h3 class="font-display text-2xl font-semibold text-blue-900 mb-4">How to Apply for Scholarships</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+                                1
+                            </div>
+                            <h4 class="font-semibold text-blue-900 mb-2">Submit Application</h4>
+                            <p class="text-gray-600 text-sm">Fill scholarship application form with required documents</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+                                2
+                            </div>
+                            <h4 class="font-semibold text-blue-900 mb-2">Document Verification</h4>
+                            <p class="text-gray-600 text-sm">Our team will verify your documents and eligibility</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+                                3
+                            </div>
+                            <h4 class="font-semibold text-blue-900 mb-2">Scholarship Award</h4>
+                            <p class="text-gray-600 text-sm">Successful candidates will be notified and awarded</p>
+                        </div>
+                    </div>
+                    <button onclick="window.location.href='connect.html'" class="mt-6 bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300">
+                        Apply for Scholarship
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book List Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-blue-900 mb-4">Recommended Book List</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Curated list of essential books and study materials for comprehensive exam preparation.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h3 class="font-display text-lg font-semibold text-blue-900 mb-4">Physics</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• NCERT Physics (Class 11 & 12)</li>
+                        <li>• Concepts of Physics - H.C. Verma</li>
+                        <li>• Fundamentals of Physics - Halliday</li>
+                        <li>• Problems in General Physics - Irodov</li>
+                        <li>• Understanding Physics - D.C. Pandey</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h3 class="font-display text-lg font-semibold text-blue-900 mb-4">Chemistry</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• NCERT Chemistry (Class 11 & 12)</li>
+                        <li>• Organic Chemistry - Morrison & Boyd</li>
+                        <li>• Physical Chemistry - O.P. Tandon</li>
+                        <li>• Inorganic Chemistry - J.D. Lee</li>
+                        <li>• Modern Approach to Chemical Calculations - R.C. Mukherjee</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h3 class="font-display text-lg font-semibold text-blue-900 mb-4">Mathematics</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• NCERT Mathematics (Class 11 & 12)</li>
+                        <li>• Mathematics - R.D. Sharma</li>
+                        <li>• Problems in Calculus - I.A. Maron</li>
+                        <li>• Coordinate Geometry - S.L. Loney</li>
+                        <li>• Higher Algebra - Hall & Knight</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h3 class="font-display text-lg font-semibold text-blue-900 mb-4">Biology</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• NCERT Biology (Class 11 & 12)</li>
+                        <li>• Trueman's Biology - Tiwari & Tyagi</li>
+                        <li>• Objective Biology - Dinesh</li>
+                        <li>• Pradeep's Biology</li>
+                        <li>• Biology - Campbell & Reece</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-4">All study materials and books are provided by the institution as part of the course package.</p>
+                <button onclick="showNotification('Book list downloaded successfully!', 'success')" class="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors duration-300">
+                    Download Complete Book List
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form Modal -->
+    <div id="admissionModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-90vh overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-display text-2xl font-bold text-blue-900">Admission Application</h3>
+                    <button onclick="closeAdmissionModal()" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <form id="admissionForm" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
+                            <input type="text" name="firstName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
+                            <input type="text" name="lastName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                            <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Phone *</label>
+                            <input type="tel" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Date of Birth *</label>
+                            <input type="date" name="dob" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Gender *</label>
+                            <select name="gender" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Course Applied For *</label>
+                        <select name="course" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Select Course</option>
+                            <option value="neet">NEET Preparation</option>
+                            <option value="iit-jee">IIT-JEE Preparation</option>
+                            <option value="cet">CET Preparation</option>
+                            <option value="sat">SAT Preparation</option>
+                            <option value="foundation">Foundation Course</option>
+                            <option value="crash">Crash Course</option>
+                            <option value="math-foundation">Math Foundation Course</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Current School/Institution</label>
+                        <input type="text" name="currentSchool" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Address</label>
+                        <textarea name="address" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Why do you want to join LGS?</label>
+                        <textarea name="motivation" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <input type="checkbox" name="terms" required class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                        <label class="ml-2 block text-sm text-gray-700">
+                            I agree to the <a href="#" class="text-blue-600 hover:text-blue-500">Terms and Conditions</a>
+                        </label>
+                    </div>
+                    
+                    <div class="flex space-x-4 pt-4">
+                        <button type="submit" class="flex-1 bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
+                            Submit Application
+                        </button>
+                        <button type="button" onclick="closeAdmissionModal()" class="px-6 py-3 border border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-colors">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <div class="font-display text-2xl font-bold">LGS</div>
+                    <p class="text-blue-200 text-sm">Learning Gateway School - Empowering excellence through innovative education.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-200 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="font-semibold text-lg">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="index.html" class="block text-blue-200 hover:text-white transition-colors text-sm">Home</a>
+                        <a href="about.html" class="block text-blue-200 hover:text-white transition-colors text-sm">About Us</a>
+                        <a href="life-at-lgs.html" class="block text-blue-200 hover:text-white transition-colors text-sm">Life at LGS</a>
+                        <a href="connect.html" class="block text-blue-200 hover:text-white transition-colors text-sm">Connect</a>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="font-semibold text-lg">Contact Info</h3>
+                    <div class="space-y-2 text-sm text-blue-200">
+                        <p>📍 123 Education Street, Learning City, LC 12345</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>✉️ info@lgs.edu</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="font-semibold text-lg">Office Hours</h3>
+                    <div class="space-y-2 text-sm text-blue-200">
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                        <p>Saturday: 9:00 AM - 2:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+                <p class="text-blue-200 text-sm">&copy; 2023 Learning Gateway School. All rights reserved. | <a href="#" class="hover:text-white transition-colors">Privacy Policy</a> | <a href="#" class="hover:text-white transition-colors">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeAnimations();
+        });
+
+        function initializeAnimations() {
+            // Animate course cards
+            const courseCards = document.querySelectorAll('.course-card');
+            courseCards.forEach((card, index) => {
+                anime({
+                    targets: card,
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    duration: 600,
+                    delay: index * 100,
+                    easing: 'easeOutQuart'
+                });
+            });
+
+            // Animate scholarship cards
+            const scholarshipCards = document.querySelectorAll('.scholarship-card');
+            scholarshipCards.forEach((card, index) => {
+                anime({
+                    targets: card,
+                    translateY: [30, 0],
+                    opacity: [0, 1],
+                    duration: 500,
+                    delay: index * 150,
+                    easing: 'easeOutQuart'
+                });
+            });
+        }
+
+        // Admission modal functions
+        function openAdmissionForm(courseType) {
+            const modal = document.getElementById('admissionModal');
+            const courseSelect = modal.querySelector('select[name="course"]');
+            
+            // Set the course if specified
+            if (courseType) {
+                courseSelect.value = courseType;
+            }
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Animate modal entrance
+            anime({
+                targets: modal.querySelector('.bg-white'),
+                scale: [0.8, 1],
+                opacity: [0, 1],
+                duration: 300,
+                easing: 'easeOutQuart'
+            });
+        }
+
+        function closeAdmissionModal() {
+            const modal = document.getElementById('admissionModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Handle admission form submission
+        document.getElementById('admissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (validateForm(this)) {
+                // Simulate form submission
+                showNotification('Application submitted successfully! We will contact you soon.', 'success');
+                closeAdmissionModal();
+                this.reset();
+            } else {
+                showNotification('Please fill in all required fields correctly.', 'error');
+            }
+        });
+
+        // Form validation utility
+        function validateForm(formElement) {
+            const inputs = formElement.querySelectorAll('input[required], textarea[required], select[required]');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    input.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    input.classList.remove('border-red-500');
+                }
+                
+                // Email validation
+                if (input.type === 'email' && input.value) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(input.value)) {
+                        input.classList.add('border-red-500');
+                        isValid = false;
+                    }
+                }
+                
+                // Phone validation
+                if (input.type === 'tel' && input.value) {
+                    const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+                    if (!phoneRegex.test(input.value.replace(/\s/g, ''))) {
+                        input.classList.add('border-red-500');
+                        isValid = false;
+                    }
+                }
+            });
+            
+            return isValid;
+        }
+
+        // Show notification
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            notification.className = `fixed top-20 right-4 z-50 p-4 rounded-lg shadow-lg ${
+                type === 'success' ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
+            } transform translate-x-full transition-transform duration-300`;
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Animate out and remove
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('admissionModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeAdmissionModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeAdmissionModal();
+            }
+        });
+    </script>
+</body>
+</html>

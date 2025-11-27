@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life at LGS - Learning Gateway School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #f97316;
+            --accent: #3b82f6;
+            --neutral: #6b7280;
+            --bg: #ffffff;
+        }
+        
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'Source Code Pro', monospace; }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .facility-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        
+        .facility-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .achievement-filter {
+            transition: all 0.3s ease;
+        }
+        
+        .achievement-filter.active {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .calendar-day {
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .calendar-day:hover {
+            background: #f3f4f6;
+        }
+        
+        .calendar-day.has-event {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .calendar-day.has-event:hover {
+            background: #fde68a;
+        }
+    </style>
+</head>
+<body class="font-body bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="font-display font-bold text-2xl text-blue-900">LGS</div>
+                    <div class="ml-2 text-sm text-gray-600">Learning Gateway School</div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium">About Us</a>
+                    <a href="courses.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium">Courses</a>
+                    <a href="life-at-lgs.html" class="nav-link text-blue-900 font-medium">Life at LGS</a>
+                    <a href="connect.html" class="nav-link text-gray-700 hover:text-blue-900 font-medium">Connect</a>
+                </div>
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-blue-50 to-blue-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="font-display text-5xl font-bold text-blue-900 mb-6">Life at LGS</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience a vibrant campus life with world-class facilities, diverse activities, and endless opportunities 
+                    for personal growth and development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wall of Fame -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-blue-900 mb-4">Wall of Fame</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Celebrating the outstanding achievements of our students across academics, sports, and cultural activities.
+                </p>
+            </div>
+            
+            <!-- Achievement Filters -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="achievement-filter active px-6 py-3 rounded-full border-2 border-orange-500 text-orange-500 font-semibold" data-filter="all">
+                    All Achievements
+                </button>
+                <button class="achievement-filter px-6 py-3 rounded-full border-2 border-orange-500 text-orange-500 font-semibold" data-filter="academic">
+                    Academic
+                </button>
+                <button class="achievement-filter px-6 py-3 rounded-full border-2 border-orange-500 text-orange-500 font-semibold" data-filter="sports">
+                    Sports
+                </button>
+                <button class="achievement-filter px-6 py-3 rounded-full border-2 border-orange-500 text-orange-500 font-semibold" data-filter="cultural">
+                    Cultural
+                </button>
+                <button class="achievement-filter px-6 py-3 rounded-full border-2 border-orange-500 text-orange-500 font-semibold" data-filter="leadership">
+                    Leadership
+                </button>
+            </div>
+            
+            <!-- Achievement Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="achievementGrid">
+                <!-- Achievements will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Facilities -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-blue-900 mb-4">Our Campus Facilities</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    State-of-the-art infrastructure designed to support holistic learning and development.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Labs -->
+                <div class="facility-card bg-white rounded-2xl p-6 shadow-lg" onclick="openFacilityModal('labs')">
+                    <div class="mb-4">
+                        <img src="resources/science-lab.jpg" alt="Laboratories" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold text-blue-900 mb-2">Modern Laboratories</h3>
+                        <p class="text-gray-600 text-sm">Well-equipped science labs with latest equipment and safety measures.</p>
+                    </div>
+                </div>
+
+                <!-- Classrooms -->
+                <div class="facility-card bg-white rounded-2xl p-6 shadow-lg" onclick="openFacilityModal('classrooms')">
+                    <div class="mb-4">
+                        <img src="resources/sat-classroom.jpg" alt="Classrooms" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold text-blue-900 mb-2">Smart Classrooms</h3>
+                        <p class="text-gray-600 text-sm">Digital classrooms with interactive whiteboards and multimedia facilities.</p>
+                    </div>
+                </div>
+
+                <!-- Library -->
+                <div class="facility-card bg-white rounded-2xl p-6 shadow-lg" onclick="openFacilityModal('library')">
+                    <div class="mb-4">
+                        <img src="resources/library-students.jpg" alt="Library" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold text-blue-900 mb-2">Resource Library</h3>
+                        <p class="text-gray-600 text-sm">Extensive collection of books, journals, and digital resources.</p>
+                    </div>
+                </div>
+
+                <!-- Sports Ground -->
+                <div class="facility-card bg-white rounded-2xl p-6 shadow-lg" onclick="openFacilityModal('sports')">
+                    <div class="mb-4">
+                        <img src="resources/student-achievers.jpg" alt="Sports Ground" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold text-blue-900 mb-2">Sports Complex</h3>
+                        <p class="text-gray-600 text-sm">Multi-sport facilities including cricket, football, basketball, and athletics.</p>
+                    </div>
+                </div>
+
+                <!-- Canteen -->
+                <div class="facility-card bg-white rounded-2xl p-6 shadow-lg" onclick="openFacilityModal('canteen')">
+                    <div class="mb-4">
+                        <img src="resources/canteen.jpg" alt="Canteen" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold text-blue-900 mb-2">Modern Canteen</h3>
+                        <p class="text-gray-600 text-sm">Hygienic food court offering nutritious meals and snacks.</p>
+                    </div>
+                </div>
+
+                <!-- Hostel -->
+                <div class="facility-card bg-white rounded-2xl p-6 shadow-lg" onclick="openFacilityModal('hostel')">
+                    <div class="mb-4">
+                        <img src="resources/hostel.jpg" alt="Hostel" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold text-blue-900 mb-2">Residential Hostel</h3>
+                        <p class="text-gray-600 text-sm">Comfortable accommodation with modern amenities and 24/7 security.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events and Activities -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-blue-900 mb-4">Events & Activities</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A vibrant calendar of events, cultural programs, and extracurricular activities throughout the year.
+                </p>
+            </div>
+            
+            <!-- Calendar -->
+            <div class="bg-gray-50 rounded-2xl p-8 mb-12">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-display text-2xl font-semibold text-blue-900">December 2023</h3>
+                    <div class="flex space-x-2">
+                        <button onclick="changeMonth(-1)" class="p-2 hover:bg-gray-200 rounded-lg transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button onclick="changeMonth(1)" class="p-2 hover:bg-gray-200 rounded-lg transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-7 gap-2 mb-4">
+                    <div class="text-center font-semibold text-gray-600 py-2">Sun</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Mon</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Tue</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Wed</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Thu</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Fri</div>
+                    <div class="text-center font-semibold text-gray-600 py-2">Sat</div>
+                </div>
+                
+                <div class="grid grid-cols-7 gap-2" id="calendarGrid">
+                    <!-- Calendar days will be populated by JavaScript -->
+                </div>
+                
+                <div class="mt-6 flex items-center justify-center space-x-6 text-sm">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-yellow-200 rounded mr-2"></div>
+                        <span class="text-gray-600">Events</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-blue-200 rounded mr-2"></div>
+                        <span class="text-gray-600">Exams</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-green-200 rounded mr-2"></div>
+                        <span class="text-gray-600">Holidays</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Upcoming Events -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-blue-900">Science Exhibition</h3>
+                            <p class="text-sm text-gray-600">Dec 15, 2023 • 9:00 AM</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Annual science exhibition showcasing innovative projects by our students. Open to all parents and visitors.</p>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">Academic</span>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-blue-900">Annual Cultural Fest</h3>
+                            <p class="text-sm text-gray-600">Dec 22, 2023 • 10:00 AM</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Cultural festival with music, dance, drama, and art competitions. Celebrate diversity and talent.</p>
+                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-medium">Cultural</span>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-blue-900">Sports Day</h3>
+                            <p class="text-sm text-gray-600">Jan 10, 2024 • 8:00 AM</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Annual sports day with various athletic events, team sports, and prize distribution ceremony.</p>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Sports</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours and Excursions -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-blue-900 mb-4">Tours & Excursions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Educational tours and excursions that provide real-world learning experiences and exposure.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <img src="resources/science-lab.jpg" alt="Industrial Visit" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="font-display text-xl font-semibold text-blue-900 mb-3">Industrial Visits</h3>
+                    <p class="text-gray-600 text-sm mb-4">Regular visits to industries, research centers, and manufacturing units to provide practical exposure.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                        </svg>
+                        Quarterly visits
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <img src="resources/library-students.jpg" alt="Educational Tour" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="font-display text-xl font-semibold text-blue-900 mb-3">Educational Tours</h3>
+                    <p class="text-gray-600 text-sm mb-4">National and international educational tours to historical sites, museums, and universities.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                        </svg>
+                        Annual tours
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <img src="resources/faculty-team.jpg" alt="Adventure Camp" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="font-display text-xl font-semibold text-blue-900 mb-3">Adventure Camps</h3>
+                    <p class="text-gray-600 text-sm mb-4">Outdoor adventure camps focusing on team building, leadership, and personality development.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                        </svg>
+                        Bi-annual camps
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery and Media -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-blue-900 mb-4">Gallery & Media</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Capturing the memorable moments and achievements that define life at LGS.
+                </p>
+            </div>
+            
+            <!-- Gallery Filters -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="gallery-filter active px-6 py-3 rounded-full border-2 border-orange-500 text-orange-500 font-semibold" data-filter="all">
+                    All Photos
+                </button>
+                <button class="gallery-filter px-6 py-3 rounded-full border-2 border-orange-500 text-orange-500 font-semibold" data-filter="events">
+                    Events
+                </button>
+                <button class="gallery-filter px-6 py-3 rounded-full border-2 border-orange-500 text-orange-500 font-semibold" data-filter="sports">
+                    Sports
+                </button>
+                <button class="gallery-filter px-6 py-3 rounded-full border-2 border-orange-500 text-orange-500 font-semibold" data-filter="academics">
+                    Academics
+                </button>
+                <button class="gallery-filter px-6 py-3 rounded-full border-2 border-orange-500 text-orange-500 font-semibold" data-filter="cultural">
+                    Cultural
+                </button>
+            </div>
+            
+            <!-- Photo Gallery -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="photoGallery">
+                <!-- Gallery items will be populated by JavaScript -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <button onclick="loadMorePhotos()" class="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300">
+                    Load More Photos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facility Modal -->
+    <div id="facilityModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-90vh overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="facilityModalTitle" class="font-display text-2xl font-bold text-blue-900"></h3>
+                    <button onclick="closeFacilityModal()" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="facilityModalContent" class="space-y-6">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <div class="font-display text-2xl font-bold">LGS</div>
+                    <p class="text-blue-200 text-sm">Learning Gateway School - Empowering excellence through innovative education.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-200 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="font-semibold text-lg">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="index.html" class="block text-blue-200 hover:text-white transition-colors text-sm">Home</a>
+                        <a href="about.html" class="block text-blue-200 hover:text-white transition-colors text-sm">About Us</a>
+                        <a href="courses.html" class="block text-blue-200 hover:text-white transition-colors text-sm">Courses</a>
+                        <a href="connect.html" class="block text-blue-200 hover:text-white transition-colors text-sm">Connect</a>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="font-semibold text-lg">Contact Info</h3>
+                    <div class="space-y-2 text-sm text-blue-200">
+                        <p>📍 123 Education Street, Learning City, LC 12345</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>✉️ info@lgs.edu</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="font-semibold text-lg">Office Hours</h3>
+                    <div class="space-y-2 text-sm text-blue-200">
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                        <p>Saturday: 9:00 AM - 2:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+                <p class="text-blue-200 text-sm">&copy; 2023 Learning Gateway School. All rights reserved. | <a href="#" class="hover:text-white transition-colors">Privacy Policy</a> | <a href="#" class="hover:text-white transition-colors">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeAchievements();
+            initializeCalendar();
+            initializeGallery();
+            initializeAnimations();
+        });
+
+        // Achievement data
+        const achievementsData = [
+            {
+                id: 1,
+                name: "Rahul Sharma",
+                category: "academic",
+                achievement: "NEET All India Rank 127",
+                description: "Secured admission in AIIMS Delhi with 99.8 percentile",
+                year: "2023",
+                image: "resources/student-achievers.jpg",
+                details: "Rahul's dedication and consistent hard work helped him achieve this remarkable feat. He followed our structured study plan and attended all doubt-clearing sessions."
+            },
+            {
+                id: 2,
+                name: "Priya Patel",
+                category: "sports",
+                achievement: "National Badminton Champion",
+                description: "Won gold medal in U-18 National Badminton Championship",
+                year: "2023",
+                image: "resources/student-achievers.jpg",
+                details: "Priya balanced her academic commitments with rigorous badminton training. Her time management skills and determination led to this national recognition."
+            },
+            {
+                id: 3,
+                name: "Amit Kumar",
+                category: "cultural",
+                achievement: "Inter-school Debate Winner",
+                description: "Best speaker award at State Level Debate Competition",
+                year: "2023",
+                image: "resources/toastmasters-event.jpg",
+                details: "Amit's exceptional oratory skills and critical thinking abilities made him stand out. He is an active member of our Toastmasters club."
+            },
+            {
+                id: 4,
+                name: "Sarah Johnson",
+                category: "leadership",
+                achievement: "Student Council President",
+                description: "Led various school initiatives and community service programs",
+                year: "2023",
+                image: "resources/faculty-team.jpg",
+                details: "Sarah demonstrated exceptional leadership qualities by organizing successful events and leading community outreach programs."
+            },
+            {
+                id: 5,
+                name: "Vikram Singh",
+                category: "academic",
+                achievement: "IIT-JEE Advanced Rank 456",
+                description: "Secured admission in IIT Bombay Computer Science",
+                year: "2023",
+                image: "resources/iit-jee-study.jpg",
+                details: "Vikram's systematic approach to problem-solving and consistent practice helped him achieve this prestigious rank."
+            },
+            {
+                id: 6,
+                name: "Neha Gupta",
+                category: "cultural",
+                achievement: "Classical Dance Performer",
+                description: "Performed at National Youth Festival",
+                year: "2023",
+                image: "resources/student-achievers.jpg",
+                details: "Neha's passion for classical dance and dedication to practice earned her this opportunity to perform at the national level."
+            }
+        ];
+
+        // Photo gallery data
+        const galleryData = [
+            { src: "resources/neet-prep.jpg", category: "academics", title: "NEET Preparation Class" },
+            { src: "resources/iit-jee-study.jpg", category: "academics", title: "IIT-JEE Study Session" },
+            { src: "resources/sat-classroom.jpg", category: "academics", title: "SAT Classroom" },
+            { src: "resources/science-lab.jpg", category: "academics", title: "Science Laboratory" },
+            { src: "resources/student-achievers.jpg", category: "events", title: "Achievement Ceremony" },
+            { src: "resources/toastmasters-event.jpg", category: "events", title: "Toastmasters Event" },
+            { src: "resources/faculty-team.jpg", category: "events", title: "Faculty Meeting" },
+            { src: "resources/library-students.jpg", category: "academics", title: "Library Study" },
+            { src: "resources/canteen.jpg", category: "events", title: "Canteen Time" },
+            { src: "resources/hostel.jpg", category: "events", title: "Hostel Life" },
+            { src: "resources/student-achievers.jpg", category: "sports", title: "Sports Day" },
+            { src: "resources/toastmasters-event.jpg", category: "cultural", title: "Cultural Program" }
+        ];
+
+        // Facility data
+        const facilityData = {
+            labs: {
+                title: "Modern Laboratories",
+                content: `
+                    <img src="resources/science-lab.jpg" alt="Laboratories" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Features</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Separate Physics, Chemistry & Biology labs</li>
+                                <li>• Latest equipment and apparatus</li>
+                                <li>• Digital measurement instruments</li>
+                                <li>• Safety equipment and first aid</li>
+                                <li>• Fume hoods and ventilation systems</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Capacity</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• 40 students per lab session</li>
+                                <li>• Individual work stations</li>
+                                <li>• Demonstration area</li>
+                                <li>• Storage facilities</li>
+                                <li>• Preparation rooms</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            classrooms: {
+                title: "Smart Classrooms",
+                content: `
+                    <img src="resources/sat-classroom.jpg" alt="Classrooms" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Technology</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Interactive whiteboards</li>
+                                <li>• Multimedia projectors</li>
+                                <li>• High-speed internet</li>
+                                <li>• Audio-visual systems</li>
+                                <li>• Digital learning resources</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Comfort</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Ergonomic seating</li>
+                                <li>• Air conditioning</li>
+                                <li>• Natural lighting</li>
+                                <li>• Spacious layout</li>
+                                <li>• Acoustic design</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            library: {
+                title: "Resource Library",
+                content: `
+                    <img src="resources/library-students.jpg" alt="Library" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Collections</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• 50,000+ books</li>
+                                <li>• National & international journals</li>
+                                <li>• Digital resources</li>
+                                <li>• Reference materials</li>
+                                <li>• E-book access</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Facilities</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Reading halls</li>
+                                <li>• Digital library corner</li>
+                                <li>• Group study areas</li>
+                                <li>• Quiet zones</li>
+                                <li>• Wi-Fi connectivity</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            sports: {
+                title: "Sports Complex",
+                content: `
+                    <img src="resources/student-achievers.jpg" alt="Sports" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Facilities</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Cricket ground</li>
+                                <li>• Football field</li>
+                                <li>• Basketball courts</li>
+                                <li>• Volleyball courts</li>
+                                <li>• Athletics track</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Amenities</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Gymnasium</li>
+                                <li>• Changing rooms</li>
+                                <li>• Equipment storage</li>
+                                <li>• First aid facility</li>
+                                <li>• Spectator seating</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            canteen: {
+                title: "Modern Canteen",
+                content: `
+                    <img src="resources/canteen.jpg" alt="Canteen" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Services</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Nutritious meals</li>
+                                <li>• Snacks and beverages</li>
+                                <li>• Fresh fruit juices</li>
+                                <li>• Special dietary options</li>
+                                <li>• Hygienic preparation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Facilities</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Spacious dining area</li>
+                                <li>• Modern kitchen equipment</li>
+                                <li>• Clean water supply</li>
+                                <li>• Waste management</li>
+                                <li>• Comfortable seating</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            hostel: {
+                title: "Residential Hostel",
+                content: `
+                    <img src="resources/hostel.jpg" alt="Hostel" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Accommodation</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• Separate boys & girls hostels</li>
+                                <li>• 2/3/4 sharing rooms</li>
+                                <li>• Attached bathrooms</li>
+                                <li>• Study tables</li>
+                                <li>• Storage facilities</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-blue-900 mb-3">Amenities</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• 24/7 security</li>
+                                <li>• Wi-Fi connectivity</li>
+                                <li>• Common recreation room</li>
+                                <li>• Laundry services</li>
+                                <li>• Medical facility</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        function initializeAchievements() {
+            renderAchievements('all');
+            
+            // Add filter event listeners
+            document.querySelectorAll('.achievement-filter').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    document.querySelectorAll('.achievement-filter').forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.dataset.filter;
+                    renderAchievements(filter);
+                });
+            });
+        }
+
+        function renderAchievements(filter) {
+            const grid = document.getElementById('achievementGrid');
+            const filteredAchievements = filter === 'all' ? achievementsData : achievementsData.filter(a => a.category === filter);
+            
+            grid.innerHTML = filteredAchievements.map(achievement => `
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="${achievement.image}" alt="${achievement.name}" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="text-center">
+                        <h3 class="font-display text-lg font-semibold text-blue-900 mb-2">${achievement.name}</h3>
+                        <p class="text-orange-500 font-semibold mb-2">${achievement.achievement}</p>
+                        <p class="text-gray-600 text-sm mb-3">${achievement.description}</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">${achievement.year}</span>
+                            <span class="bg-${getCategoryColor(achievement.category)}-100 text-${getCategoryColor(achievement.category)}-800 px-2 py-1 rounded-full text-xs font-medium capitalize">${achievement.category}</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function getCategoryColor(category) {
+            const colors = {
+                academic: 'blue',
+                sports: 'green',
+                cultural: 'purple',
+                leadership: 'orange'
+            };
+            return colors[category] || 'gray';
+        }
+
+        function initializeCalendar() {
+            renderCalendar();
+        }
+
+        function renderCalendar() {
+            const grid = document.getElementById('calendarGrid');
+            const events = {
+                15: { type: 'event', title: 'Science Exhibition' },
+                22: { type: 'event', title: 'Cultural Fest' },
+                25: { type: 'holiday', title: 'Christmas Holiday' },
+                31: { type: 'exam', title: 'Term Exams' }
+            };
+            
+            let calendarHTML = '';
+            
+            // Add empty cells for days before the 1st
+            for (let i = 0; i < 5; i++) {
+                calendarHTML += '<div class="calendar-day p-3 text-center text-gray-400"></div>';
+            }
+            
+            // Add days of the month
+            for (let day = 1; day <= 31; day++) {
+                const event = events[day];
+                const hasEvent = event ? 'has-event' : '';
+                const eventType = event ? event.type : '';
+                
+                calendarHTML += `
+                    <div class="calendar-day p-3 text-center ${hasEvent} rounded-lg" 
+                         data-day="${day}" 
+                         data-event="${eventType}"
+                         onclick="showEventDetails(${day})">
+                        ${day}
+                        ${event ? `<div class="text-xs mt-1">${event.title}</div>` : ''}
+                    </div>
+                `;
+            }
+            
+            grid.innerHTML = calendarHTML;
+        }
+
+        function showEventDetails(day) {
+            const events = {
+                15: 'Science Exhibition - 9:00 AM to 4:00 PM',
+                22: 'Cultural Fest - 10:00 AM to 6:00 PM',
+                25: 'Christmas Holiday - School Closed',
+                31: 'Term Exams Begin'
+            };
+            
+            if (events[day]) {
+                showNotification(events[day], 'info');
+            }
+        }
+
+        function changeMonth(direction) {
+            // This would typically update the calendar to show next/previous month
+            showNotification('Calendar navigation coming soon!', 'info');
+        }
+
+        function initializeGallery() {
+            renderGallery('all');
+            
+            // Add filter event listeners
+            document.querySelectorAll('.gallery-filter').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    document.querySelectorAll('.gallery-filter').forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.dataset.filter;
+                    renderGallery(filter);
+                });
+            });
+        }
+
+        function renderGallery(filter) {
+            const gallery = document.getElementById('photoGallery');
+            const filteredPhotos = filter === 'all' ? galleryData : galleryData.filter(photo => photo.category === filter);
+            
+            gallery.innerHTML = filteredPhotos.map(photo => `
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" onclick="openPhotoModal('${photo.src}', '${photo.title}')">
+                    <img src="${photo.src}" alt="${photo.title}" class="w-full h-48 object-cover">
+                    <div class="p-3 bg-white">
+                        <p class="text-sm font-medium text-gray-900">${photo.title}</p>
+                        <p class="text-xs text-gray-500 capitalize">${photo.category}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function loadMorePhotos() {
+            showNotification('Loading more photos...', 'info');
+            // In a real implementation, this would load more photos from the server
+        }
+
+        function openPhotoModal(src, title) {
+            showNotification(`Opening: ${title}`, 'info');
+            // In a real implementation, this would open a photo modal/lightbox
+        }
+
+        function initializeAnimations() {
+            // Animate facility cards
+            const facilityCards = document.querySelectorAll('.facility-card');
+            facilityCards.forEach((card, index) => {
+                anime({
+                    targets: card,
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    duration: 600,
+                    delay: index * 100,
+                    easing: 'easeOutQuart'
+                });
+            });
+        }
+
+        function openFacilityModal(facilityType) {
+            const modal = document.getElementById('facilityModal');
+            const title = document.getElementById('facilityModalTitle');
+            const content = document.getElementById('facilityModalContent');
+            
+            const facility = facilityData[facilityType];
+            if (facility) {
+                title.textContent = facility.title;
+                content.innerHTML = facility.content;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+                
+                // Animate modal entrance
+                anime({
+                    targets: modal.querySelector('.bg-white'),
+                    scale: [0.8, 1],
+                    opacity: [0, 1],
+                    duration: 300,
+                    easing: 'easeOutQuart'
+                });
+            }
+        }
+
+        function closeFacilityModal() {
+            const modal = document.getElementById('facilityModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Show notification utility
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            const bgColor = type === 'success' ? 'bg-green-500' : type === 'error' ? 'bg-red-500' : 'bg-blue-500';
+            notification.className = `fixed top-20 right-4 z-50 p-4 rounded-lg shadow-lg ${bgColor} text-white transform translate-x-full transition-transform duration-300`;
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Animate out and remove
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('facilityModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeFacilityModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeFacilityModal();
+            }
+        });
+    </script>
+</body>
+</html>
