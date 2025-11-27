@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import anime from 'animejs';
 import { useLanguage } from '../context/LanguageContext';
+import AchievementPopup from './AchievementPopup';
 
 const Hero = () => {
     const { t } = useLanguage();
@@ -53,6 +54,7 @@ const Hero = () => {
 
     return (
         <section className="relative pt-16 min-h-screen flex items-center overflow-hidden">
+            <AchievementPopup />
             {/* Video Background */}
             <video
                 autoPlay
