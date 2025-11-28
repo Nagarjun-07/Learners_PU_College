@@ -30,6 +30,14 @@ const translations: Record<string, Record<Language, string>> = {
     ta: 'எங்களைப் பற்றி',
     ml: 'ഞങ്ങളെക്കുറിച്ച്'
   },
+  'nav-courses': {
+    en: 'Courses',
+    hi: 'पाठ्यक्रम',
+    kn: 'ಕೋರ್ಸ್‌ಗಳು',
+    te: 'కోర్సులు',
+    ta: 'பாடநெறிகள்',
+    ml: 'കോഴ്‌സുകൾ'
+  },
   'nav-life': {
     en: 'Life at Learners',
     hi: 'Learners में जीवन',
@@ -114,6 +122,54 @@ const translations: Record<string, Record<Language, string>> = {
   },
 
   // Sections Headers
+  'section-main-streams': {
+    en: 'Our Main Streams',
+    hi: 'हमारी मुख्य धाराएँ',
+    kn: 'ನಮ್ಮ ಮುಖ್ಯ ವಿಭಾಗಗಳು',
+    te: 'మా ప్రధాన విభాగాలు',
+    ta: 'எங்கள் முக்கிய பிரிவுகள்',
+    ml: 'ഞങ്ങളുടെ പ്രധാന വിഭാഗങ്ങൾ'
+  },
+  'section-main-streams-desc': {
+    en: 'Core combinations for a strong foundation.',
+    hi: 'मजबूत नींव के लिए मुख्य संयोजन।',
+    kn: 'ಬಲವಾದ ಅಡಿಪಾಯಕ್ಕಾಗಿ ಪ್ರಮುಖ ಸಂಯೋಜನೆಗಳು.',
+    te: 'బలమైన పునాది కోసం ప్రధాన కలయికలు.',
+    ta: 'வலுவான அடித்தளத்திற்கான முக்கிய சேர்க்கைகள்.',
+    ml: 'ശക്തമായ അടിത്തറയ്ക്കുള്ള പ്രധാന കോമ്പിനേഷനുകൾ.'
+  },
+  'stream-pcmb': {
+    en: 'PCMB',
+    hi: 'PCMB',
+    kn: 'PCMB',
+    te: 'PCMB',
+    ta: 'PCMB',
+    ml: 'PCMB'
+  },
+  'stream-pcmb-desc': {
+    en: 'Physics, Chemistry, Mathematics, Biology',
+    hi: 'भौतिकी, रसायन विज्ञान, गणित, जीवविज्ञान',
+    kn: 'ಭೌತಶಾಸ್ತ್ರ, ರಸಾಯನಶಾಸ್ತ್ರ, ಗಣಿತ, ಜೀವಶಾಸ್ತ್ರ',
+    te: 'భౌతికశాస్త్రం, రసాయనశాస్త్రం, గణితం, జీవశాస్త్రం',
+    ta: 'இயற்பியல், வேதியியல், கணிதம், உயிரியல்',
+    ml: 'ഫിസിക്സ്, കെമിസ്ട്രി, മാത്തമാറ്റിക്സ്, ബയോളജി'
+  },
+  'stream-pcmc': {
+    en: 'PCMC',
+    hi: 'PCMC',
+    kn: 'PCMC',
+    te: 'PCMC',
+    ta: 'PCMC',
+    ml: 'PCMC'
+  },
+  'stream-pcmc-desc': {
+    en: 'Physics, Chemistry, Mathematics, Computer Science',
+    hi: 'भौतिकी, रसायन विज्ञान, गणित, कंप्यूटर विज्ञान',
+    kn: 'ಭೌತಶಾಸ್ತ್ರ, ರಸಾಯನಶಾಸ್ತ್ರ, ಗಣಿತ, ಗಣಕ ವಿಜ್ಞಾನ',
+    te: 'భౌతికశాస్త్రం, రసాయనశాస్త్రం, గణితం, కంప్యూటర్ సైన్స్',
+    ta: 'இயற்பியல், வேதியியல், கணிதம், கணினி அறிவியல்',
+    ml: 'ഫിസിക്സ്, കെമിസ്ട്രി, മാത്തമാറ്റിക്സ്, കമ്പ്യൂട്ടർ സയൻസ്'
+  },
   'section-streams': {
     en: 'Our Academic Streams',
     hi: 'हमारे शैक्षणिक धाराएँ',
