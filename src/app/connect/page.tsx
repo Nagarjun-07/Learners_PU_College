@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import anime from 'animejs';
 
-// Types
 type InquiryType = 'admission' | 'course' | 'fee' | 'scholarship' | 'facility' | 'other';
 type PositionType = 'mathematics-faculty' | 'biology-teacher' | 'academic-counselor' | 'general-application';
 
@@ -576,3 +575,4 @@ const Connect = () => {
 };
 
 export default Connect;
+
